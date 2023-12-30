@@ -1,0 +1,163 @@
+@define-color white #ffffff;
+
+@define-color light #e0e0e0;
+@define-color medium #a4a4a4;
+@define-color dark #535353;
+
+@define-color black #000000;
+
+@define-color red #ff0000;
+@define-color green #00ff9b;
+@define-color blue #009bff;
+@define-color orange #FF9B00;
+
+* {
+  font-family: Iosevka Term;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: @dark;
+  color: @medium;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button {
+  padding: 0 2px;
+  color: @light;
+}
+
+#workspaces button:hover {
+  color: @white;
+  background: @dark;
+}
+
+#workspaces button.active {
+  color: @black;
+  background-color: @white;
+}
+
+#pulseaudio,
+#network,
+#bluetooth,
+#backlight,
+#battery,
+#clock,
+#language {
+  padding: 0 6px;
+  color: @medium;
+  background-color: @dark;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#clock {
+  color: @medium;
+  font-style: italic;
+}
+
+#battery {
+  background-color: @dark;
+  color: @light;
+}
+
+/* #battery.plugged, */
+#battery.charging {
+  color: @green;
+  background-color: @dark;
+}
+#battery.full.charging {
+  color: @green;
+  background-color: @white;
+}
+#battery.warning:not(.charging) {
+  color: @dark;
+  background-color: @orange;
+}
+
+@keyframes blink {
+  to {
+    /* background-color: @red; */
+    color: @white;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: @white;
+  color: @red;
+  animation-name: blink;
+  animation-duration: 0.4s;
+  animation-timing-function: steps(16, end);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#network,
+#network.disabled {
+  color: @medium;
+}
+
+#network.wifi,
+#network.linked,
+#network.ethernet {
+  color: @green;
+}
+
+#network.disconnectid,
+#network.disconnected.linked {
+  color: @red;
+}
+
+#bluetooth.on {
+  color: @white;
+}
+#bluetooth.off {
+  color: @medium;
+}
+#bluetooth.connected {
+  color: @blue;
+  background-color: @white;
+}
+
+#pulseaudio {
+  color: @white;
+}
+#pulseaudio.mic {
+  color: @orange;
+  /* background-color: @white; */
+}
+#pulseaudio.vol.bluetooth {
+  color: @blue;
+  background-color: @white;
+}
+#pulseaudio.vol.muted {
+  color: @medium;
+  background-color: @dark;
+}
+
+#pulseaudio.mic.source-muted {
+  color: @medium;
+  background-color: @dark;
+}
+
+#language {
+  color: @medium;
+}
+#language.ru {
+  color: @red;
+}

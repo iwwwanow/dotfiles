@@ -1,0 +1,39 @@
+	font = "cormorant"
+	font-size = 24
+	##font-features="ss07"
+
+	text-color = #A4A4A4
+	prompt-color = #E0E0E0
+	input-color = #FFFFFF
+
+	# default-result-color = #00FF9B
+	selection-color = #E0E0E0
+	selection-match-color = #00FF9B
+
+	width = 1280
+	height = 720
+
+	background-color = #535353
+
+	outline-width = 0
+	border-width = 2
+
+	border-color = #A4A4A4
+
+	# Padding between borders and text. Can be pixels or a percentage.
+	padding-top = 8
+	padding-bottom = 8
+	padding-left = 16
+	padding-right = 16
+
+	hide-cursor = true
+
+	history = true
+
+	fuzzy-match = true
+	# auto-accept-single = true
+### Inclusion
+#
+	# Configs can be split between multiple files, and then included
+	# within each other.
+	# include = /path/to/config

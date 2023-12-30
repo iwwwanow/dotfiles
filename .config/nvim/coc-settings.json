@@ -1,0 +1,14 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "emmet.includeLanguages": {
+    "eta": "html"
+  },
+  "html.filetypes": ["html", "eta"],
+  "html.format.enable": true,
+  "html.format.indentHandlebars": true,
+  "html.format.wrapAttributes": "preserve-aligned",
+  "html.format.templating": true,
+  "sql.formatOptions": {
+    "language": "sqlite"
+  }
+}

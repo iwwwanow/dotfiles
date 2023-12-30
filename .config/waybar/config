@@ -1,0 +1,112 @@
+{
+    "layer": "top",
+    "height": 24,
+    "spacing": 4, // Gaps between modules (4px)
+
+    // ORDER OF THE MODULES
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+
+		"modules-center": ["clock"],
+
+    "modules-right": ["backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language" ],
+
+		"hyprland/window": {
+    		"max-length": 200,
+    		"separate-outputs": true
+		},
+
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+				 "on-click": "activate",
+         "warp-on-scroll": false,
+     },
+
+		"hyprland/language": {
+			// "format": "{short}",
+    	"format-en": "EN",
+    	"format-ru": "RU",
+    	"keyboard-name": "at-translated-set-2-keyboard",
+			"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+		},
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "clock": {
+				// "locale": "ru_RU",
+				// "interval": "1",
+        "format": "{:%H:%M  //  %d/%m/%Y}",
+        // "tooltip-format": "{calendar}",
+    },
+
+    "backlight": {
+        "format": "BL:{percent}%",
+    },
+
+    "battery": {
+        "states": {
+						"full": 100,
+            "good": 95,
+            "warning": 15,
+            "critical": 5
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "\udb80\udc84 {capacity}%",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        "format-full": "",
+        "format-icons": ["\udb80\udc83", "\udb80\udc7a", "\udb80\udc7b", "\udb80\udc7c", "\udb80\udc7d", "\udb80\udc7e", "\udb80\udc7f", "\udb80\udc80", "\udb80\udc81", "\udb80\udc82", "\udb80\udc79"]
+    },
+
+    "network#nw1": {
+			"interface": "enp0s31f6",
+			"format": "EN",
+    },
+
+    "network#nw2": {
+			"interface": "wlan0",
+			"format": "WL:{signalStrength}%",
+    },
+
+    "network": {
+				"format": "{ifname}",
+        "format-alt": "{ipaddr}:{bandwidthDownBytes}/{bandwidthTotalBytes}"
+    },
+
+		"bluetooth": {
+			"format": "",
+			"format-connected": "{device_alias}",
+			"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+			"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+			"on-click": "blueberry",
+},
+
+    "pulseaudio#vol": {
+        "format": "VL:{volume}%",
+				"format-muted": "VL",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 4,
+		},
+
+    "pulseaudio#mic": {
+        "format": "MIC{format_source}",
+				"format-source": ":{volume}%",
+        "format-source-muted": "",
+						"on-click": "pavucontrol",
+            "on-scroll-up": "pactl set-source-volume 1 +4%",
+            "on-scroll-down": "pactl set-source-volume 1 -4%"
+		},
+}
