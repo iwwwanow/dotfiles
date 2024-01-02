@@ -87,8 +87,8 @@
 },
 
     "pulseaudio#vol": {
-        "format": "VL:{volume}%",
-				"format-muted": "VL",
+        "format": "VOL:{volume}%",
+				"format-muted": "VOL",
         "format-icons": {
             "headphone": "",
             "hands-free": "",

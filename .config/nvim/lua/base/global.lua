@@ -26,6 +26,7 @@ opt.expandtab = false -- nouse spaces instead of tabs
 vim.opt.list = true
 -- vim.opt.listchars = { eol = '◦', tab = '  ' }
 vim.opt.listchars = { eol = "󰘌", multispace = "| ", tab = "| " }
+-- vim.opt.listchars = { eol = "󰘌" }
 
 vim.cmd([[au BufRead,BufNewFile *.eta set filetype=eta]]) -- eta ident
 
