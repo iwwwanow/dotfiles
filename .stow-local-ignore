@@ -1,0 +1,4 @@
+cron
+.stowrc
+.git
+^/README.*
