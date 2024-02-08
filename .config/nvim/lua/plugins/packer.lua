@@ -36,9 +36,10 @@ return require("packer").startup(function()
 
 	-- COLORSCHEME
 	use({
-		"kdheepak/monochrome.nvim",
+		"effektivnayarabota1/nvim__colorscheme",
 		config = function()
-			vim.g.monochrome_style = "coolgray"
+			-- vim.g.monochrome_style = "coolgray"
+			vim.g.monochrome_style = "amplified"
 			vim.cmd("colorscheme monochrome")
 		end,
 	})

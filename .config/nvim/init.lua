@@ -1,8 +1,8 @@
-require("base/global")
+require("config/base")
 
 require("hotkeys/main")
 require("hotkeys/plugins")
 
-require("plugins/packer_install")
+require("plugins/packer")
 require("plugins/treesitter")
 require("plugins/telescope")

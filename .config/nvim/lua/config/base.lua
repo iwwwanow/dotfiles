@@ -3,6 +3,8 @@ local opt = vim.opt
 local g = vim.g
 
 opt.termguicolors = true
+g.netrw_banner = 0
+-- vim.cmd([[colorscheme effectivnayarabota1__light]]) -- eta ident
 
 opt.colorcolumn = "80" -- Разделитель на 80 символов
 opt.cursorline = true -- Подсветка строки с курсором
