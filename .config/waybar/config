@@ -40,7 +40,7 @@
     "clock": {
 				// "locale": "ru_RU",
 				// "interval": "1",
-        "format": "{:%H:%M  //  %d:%m:%Y}",
+        "format": "{:%H:%M / %d.%m.%Y}",
         // "tooltip-format": "{calendar}",
     },
 

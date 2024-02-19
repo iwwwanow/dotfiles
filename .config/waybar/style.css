@@ -67,8 +67,9 @@ button {
 }
 
 #clock {
-  color: @medium;
-  font-style: italic;
+  color: @white;
+  font-weight: bold;
+  /* font-style: italic; */
 }
 
 #battery {

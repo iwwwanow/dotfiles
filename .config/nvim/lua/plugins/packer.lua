@@ -3,29 +3,7 @@ vim.cmd([[packadd packer.nvim]])
 return require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 
-	use({ "typicode/bg.nvim" })
-
-	use({
-		"neoclide/coc.nvim",
-		branch = "release",
-	})
-
-	use("edgedb/edgedb-vim")
-
-	use({
-		"windwp/nvim-autopairs",
-		config = function()
-			require("nvim-autopairs").setup({})
-		end,
-	})
-
-	-- use({
-	-- 	"lukas-reineke/indent-blankline.nvim",
-	-- 	config = function()
-	-- 		require("ibl").setup()
-	-- 	end,
-	-- })
-
+	-- UI
 	use({
 		"nvim-lualine/lualine.nvim",
 		-- requires = { "nvim-tree/nvim-web-devicons", opt = true },
@@ -35,6 +13,7 @@ return require("packer").startup(function()
 	})
 
 	-- COLORSCHEME
+	use({ "typicode/bg.nvim" })
 	use({
 		"effektivnayarabota1/nvim__colorscheme",
 		config = function()
@@ -44,6 +23,20 @@ return require("packer").startup(function()
 		end,
 	})
 
+	-- EDITOR
+	use("tpope/vim-surround")
+	use({
+		"lukas-reineke/indent-blankline.nvim",
+		config = function()
+			require("ibl").setup()
+		end,
+	})
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
+	})
 	use({
 		"terrortylor/nvim-comment",
 		config = function()
@@ -51,6 +44,20 @@ return require("packer").startup(function()
 		end,
 	})
 
+	-- EXPLORER
+	use("mcchrish/nnn.vim")
+	use({
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.3",
+		-- or                            , branch = '0.1.x',
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+
+	-- SYSTEM
+	use({
+		"neoclide/coc.nvim",
+		branch = "release",
+	})
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
@@ -59,13 +66,6 @@ return require("packer").startup(function()
 		end,
 	})
 	use({ "luckasRanarison/tree-sitter-hypr" })
-
-	use({
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.3",
-		-- or                            , branch = '0.1.x',
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
 
 	if packer_bootstrap then
 		require("packer").sync()

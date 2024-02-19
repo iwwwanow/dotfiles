@@ -23,12 +23,11 @@ opt.showmatch = true -- Подсвечивать найденные тексто
 opt.shiftwidth = 2 -- shift 4 spaces when tab
 opt.tabstop = 2 -- 1 tab == 4 spaces
 opt.smartindent = true -- Подстраивать новые строки под предыдущий отступ
-opt.expandtab = false -- nouse spaces instead of tabs
+-- opt.expandtab = false -- nouse spaces instead of tabs
+--
 -- Tab separator setup
 vim.opt.list = true
--- vim.opt.listchars = { eol = '◦', tab = '  ' }
-vim.opt.listchars = { eol = "󰘌", multispace = "| ", tab = "| " }
--- vim.opt.listchars = { eol = "󰘌" }
+vim.opt.listchars = { eol = "󰘌", tab = "  " }
 
 vim.cmd([[au BufRead,BufNewFile *.eta set filetype=eta]]) -- eta ident
 

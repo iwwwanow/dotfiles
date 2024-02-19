@@ -36,6 +36,9 @@ n ()
     #      NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
     export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
 
+		export NNN_PLUG = 's:! echo $nnn|xclip*'
+		export NNN_PLUG = s:-!echo $PWD/$nnn|wl-copy*
+
     # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
     # stty start undef
     # stty stop undef
