@@ -21,6 +21,8 @@ export PATH="/home/operator/.deno/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
+# export PATH=QT_SCALE_FACTOR_ROUNDING_POLICY=RoundPreferFloor
+
 n ()
 {
     # Block nesting of nnn in subshells

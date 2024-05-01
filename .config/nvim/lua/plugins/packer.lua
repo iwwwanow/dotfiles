@@ -38,9 +38,22 @@ return require("packer").startup(function()
 		end,
 	})
 	use({
+		"JoosepAlviste/nvim-ts-context-commentstring",
+		config = function()
+			require("ts_context_commentstring").setup()
+			vim.g.skip_ts_context_commentstring_module = true
+		end,
+	})
+	use({
 		"terrortylor/nvim-comment",
 		config = function()
-			require("nvim_comment").setup()
+			require("nvim_comment").setup({
+				hook = function()
+					if vim.api.nvim_buf_get_option(0, "filetype") == "vue" then
+						require("ts_context_commentstring.internal").update_commentstring()
+					end
+				end,
+			})
 		end,
 	})
 

@@ -1,14 +1,13 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "emmet.includeLanguages": {
-    "eta": "html"
-  },
-  "html.filetypes": ["html", "eta"],
-  "html.format.enable": true,
-  "html.format.indentHandlebars": true,
-  "html.format.wrapAttributes": "preserve-aligned",
-  "html.format.templating": true,
-  "sql.formatOptions": {
-    "language": "sqlite"
-  }
+	"coc.preferences.formatOnSaveFiletypes": [
+		"*"
+	],
+	"sql.formatOptions": {
+		"dialect": "sqlite",
+		"linesBetweenQueries": 1
+	},
+	"eslint.run": "onSave",
+	"eslint.autoFixOnSave": true,
+  "eslint.format.enable": true,
+  "svelte.enable-ts-plugin": true
 }

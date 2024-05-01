@@ -1,7 +1,7 @@
 ### taskwarrior configuration options
 
 # taskwarrior's configuration
-data.location=.task
+data.location=/home/operator/.task
 verbose=affected,blank,context,edit,header,footnote,label,new-id,project,special,sync,recur
 uda.priority.values=H,M,,L
 
