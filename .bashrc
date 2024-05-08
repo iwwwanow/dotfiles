@@ -56,3 +56,5 @@ n ()
         rm -f "$NNN_TMPFILE" > /dev/null
     }
 }
+
+export GPG_TTY=$(tty)

@@ -1,5 +1,11 @@
 [user]
 	name = effectivnayarabota1
-	email = ivanov.nikulich@gmail.com
+	email = effectivnayarabota1@gmail.com
+	signingkey = E4E416CD8A39D584
 [core]
 	editor = nvim
+[commit]
+	gpgsign = true
+[push]
+	default = current
+	autoSetupRemote = true
