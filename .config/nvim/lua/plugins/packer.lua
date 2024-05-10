@@ -67,7 +67,20 @@ return require("packer").startup(function()
 					tabs = false,
 					fullscreen = false,
 				},
-				replace_netrw = "picker",
+				-- replace_netrw = "explorer",
+				auto_open = {
+					-- setup = "explorer",
+					tabpage = "explorer", -- or "explorer" / "picker", auto open when opening new tabpage
+					ft_ignore = { -- dont auto open for these filetypes
+						"gitcommit",
+					},
+				},
+				windownav = { -- window movement mappings to navigate out of nnn
+					left = "<C-h>",
+					right = "<C-l>",
+					next = "<C-n>",
+					prev = "<C-p>",
+				},
 			})
 		end,
 	})
@@ -84,13 +97,15 @@ return require("packer").startup(function()
 		"neoclide/coc.nvim",
 		branch = "release",
 	})
+
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
-			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			local ts_update = require("nvim-treesitter.install").update()
 			ts_update()
 		end,
 	})
+
 	use({ "luckasRanarison/tree-sitter-hypr" })
 
 	if packer_bootstrap then

@@ -97,7 +97,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nnn.nvim"] = {
-    config = { "\27LJ\2\nã\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\rexplorer\1\0\2\rexplorer\0\18replace_netrw\vpicker\1\0\3\15fullscreen\2\ttabs\1\fsession\nlocal\nsetup\bnnn\frequire\0" },
+    config = { "\27LJ\2\nü\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\14windownav\1\0\4\tprev\n<C-p>\tleft\n<C-h>\tnext\n<C-n>\nright\n<C-l>\14auto_open\14ft_ignore\1\2\0\0\14gitcommit\1\0\2\ftabpage\rexplorer\14ft_ignore\0\rexplorer\1\0\3\14windownav\0\rexplorer\0\14auto_open\0\1\0\3\15fullscreen\1\ttabs\1\fsession\nlocal\nsetup\bnnn\frequire\0" },
     loaded = true,
     path = "/home/operator/.local/share/nvim/site/pack/packer/start/nnn.nvim",
     url = "https://github.com/luukvbaal/nnn.nvim"
@@ -159,6 +159,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim__colorscheme
+time([[Config for nvim__colorscheme]], true)
+try_loadstring("\27LJ\2\ng\0\0\3\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\27colorscheme monochrome\bcmd\14amplified\21monochrome_style\6g\bvim\0", "config", "nvim__colorscheme")
+time([[Config for nvim__colorscheme]], false)
+-- Config for: nnn.nvim
+time([[Config for nnn.nvim]], true)
+try_loadstring("\27LJ\2\nü\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\14windownav\1\0\4\tprev\n<C-p>\tleft\n<C-h>\tnext\n<C-n>\nright\n<C-l>\14auto_open\14ft_ignore\1\2\0\0\14gitcommit\1\0\2\ftabpage\rexplorer\14ft_ignore\0\rexplorer\1\0\3\14windownav\0\rexplorer\0\14auto_open\0\1\0\3\15fullscreen\1\ttabs\1\fsession\nlocal\nsetup\bnnn\frequire\0", "config", "nnn.nvim")
+time([[Config for nnn.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: nvim-ts-context-commentstring
+time([[Config for nvim-ts-context-commentstring]], true)
+try_loadstring("\27LJ\2\nÅ\1\0\0\3\0\6\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0+\1\2\0=\1\5\0K\0\1\0)skip_ts_context_commentstring_module\6g\bvim\nsetup\29ts_context_commentstring\frequire\0", "config", "nvim-ts-context-commentstring")
+time([[Config for nvim-ts-context-commentstring]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\2\nß\1\0\0\4\0\b\0\0146\0\0\0009\0\1\0009\0\2\0)\2\0\0'\3\3\0B\0\3\2\a\0\4\0X\0\5Ä6\0\5\0'\2\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\25update_commentstring&ts_context_commentstring.internal\frequire\bvue\rfiletype\24nvim_buf_get_option\bapi\bvimU\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\thook\1\0\1\thook\0\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
@@ -167,26 +187,6 @@ time([[Config for nvim-comment]], false)
 time([[Config for indent-blankline.nvim]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bibl\frequire\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
--- Config for: nvim-ts-context-commentstring
-time([[Config for nvim-ts-context-commentstring]], true)
-try_loadstring("\27LJ\2\nÅ\1\0\0\3\0\6\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0+\1\2\0=\1\5\0K\0\1\0)skip_ts_context_commentstring_module\6g\bvim\nsetup\29ts_context_commentstring\frequire\0", "config", "nvim-ts-context-commentstring")
-time([[Config for nvim-ts-context-commentstring]], false)
--- Config for: nnn.nvim
-time([[Config for nnn.nvim]], true)
-try_loadstring("\27LJ\2\nã\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\rexplorer\1\0\2\rexplorer\0\18replace_netrw\vpicker\1\0\3\15fullscreen\2\ttabs\1\fsession\nlocal\nsetup\bnnn\frequire\0", "config", "nnn.nvim")
-time([[Config for nnn.nvim]], false)
--- Config for: nvim__colorscheme
-time([[Config for nvim__colorscheme]], true)
-try_loadstring("\27LJ\2\ng\0\0\3\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\27colorscheme monochrome\bcmd\14amplified\21monochrome_style\6g\bvim\0", "config", "nvim__colorscheme")
-time([[Config for nvim__colorscheme]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
