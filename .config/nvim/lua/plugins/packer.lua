@@ -58,7 +58,20 @@ return require("packer").startup(function()
 	})
 
 	-- EXPLORER
-	use("mcchrish/nnn.vim")
+	use({
+		"luukvbaal/nnn.nvim",
+		config = function()
+			require("nnn").setup({
+				explorer = {
+					session = "local",
+					tabs = false,
+					fullscreen = false,
+				},
+				replace_netrw = "picker",
+			})
+		end,
+	})
+
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.3",
