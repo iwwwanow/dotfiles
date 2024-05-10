@@ -1,9 +1,3 @@
-local builtin_telescope = require("telescope.builtin")
-vim.keymap.set("n", "<Space>ff", builtin_telescope.find_files, {})
-vim.keymap.set("n", "<Space>fg", builtin_telescope.live_grep, {})
-vim.keymap.set("n", "<Space>fb", builtin_telescope.buffers, {})
-vim.keymap.set("n", "<Space>fh", builtin_telescope.help_tags, {})
-
 local builtin = require("nnn").builtin
 mappings = {
 	{ "<C-t>", builtin.open_in_tab }, -- open file(s) in tab

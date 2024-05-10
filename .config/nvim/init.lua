@@ -1,8 +1,4 @@
-require("config/base")
+require("core")
+require("packer-manager")
 
-require("hotkeys/main")
-require("hotkeys/plugins")
-
-require("plugins/packer")
-require("plugins/treesitter")
-require("plugins/telescope")
+require("oil").setup()
