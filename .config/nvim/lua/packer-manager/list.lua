@@ -81,8 +81,10 @@ return require("packer").startup(function()
 	-- SYSTEM
 	use({
 		"stevearc/oil.nvim",
+		requires = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			require("oil").setup()
+			require("plugins/configs/oil")
+			require("plugins/keymaps/oil")
 		end,
 	})
 

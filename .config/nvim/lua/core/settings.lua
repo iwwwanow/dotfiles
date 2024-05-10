@@ -3,14 +3,14 @@ local opt = vim.opt
 local g = vim.g
 
 -- make nvim open directory is selected nvim dir
--- local group_cdpwd = vim.api.nvim_create_augroup("group_cdpwd", { clear = true })
--- vim.api.nvim_create_autocmd("VimEnter", {
--- 	group = group_cdpwd,
--- 	pattern = "*",
--- 	callback = function()
--- 		vim.api.nvim_set_current_dir(vim.fn.expand("%:p:h"))
--- 	end,
--- })
+local group_cdpwd = vim.api.nvim_create_augroup("group_cdpwd", { clear = true })
+vim.api.nvim_create_autocmd("VimEnter", {
+	group = group_cdpwd,
+	pattern = "*",
+	callback = function()
+		vim.api.nvim_set_current_dir(vim.fn.expand("%:p:h"))
+	end,
+})
 
 opt.termguicolors = true
 g.netrw_banner = 0
