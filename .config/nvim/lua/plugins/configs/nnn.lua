@@ -7,7 +7,7 @@ require("nnn").setup({
 	-- replace_netrw = "explorer",
 	auto_open = {
 		-- setup = "explorer",
-		tabpage = "explorer", -- or "explorer" / "picker", auto open when opening new tabpage
+		-- tabpage = "explorer", -- or "explorer" / "picker", auto open when opening new tabpage
 		ft_ignore = { -- dont auto open for these filetypes
 			"gitcommit",
 		},
