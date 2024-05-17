@@ -1,2 +1,2 @@
 #!/bin/bash
-kitten themes --reload-in=all Ayu light
+kitten themes --reload-in=all Pencil Light

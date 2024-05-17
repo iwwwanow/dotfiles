@@ -1,13 +1,8 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": [
-		"*"
-	],
-	"sql.formatOptions": {
-		"dialect": "sqlite",
-		"linesBetweenQueries": 1
-	},
-	"eslint.run": "onSave",
-	"eslint.autoFixOnSave": true,
-  "eslint.format.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "sql.formatOptions": {
+    "dialect": "sqlite",
+    "linesBetweenQueries": 1
+  },
   "svelte.enable-ts-plugin": true
 }

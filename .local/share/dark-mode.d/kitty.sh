@@ -1,2 +1,2 @@
 #!/bin/bash
-kitten themes --reload-in=all Ayu
+kitten themes --reload-in=all Chalk
