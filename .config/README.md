@@ -1,0 +1,2 @@
+stow to .config:
+stow .
