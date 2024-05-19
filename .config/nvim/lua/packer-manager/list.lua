@@ -9,33 +9,6 @@ return require("packer").startup(function()
 		end,
 	})
 
-	-- COLORSCHEME
-	use({ "typicode/bg.nvim" })
-
-	use({
-		"effektivnayarabota1/nvim-colorscheme",
-		config = function()
-			require("plugins/configs/nvim-colorscheme")
-		end,
-	})
-
-	-- EDITOR
-	use("tpope/vim-surround")
-
-	use({
-		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require("ibl").setup()
-		end,
-	})
-
-	use({
-		"windwp/nvim-autopairs",
-		config = function()
-			require("nvim-autopairs").setup()
-		end,
-	})
-
 	-- COMMENTS
 	use({
 		"JoosepAlviste/nvim-ts-context-commentstring",
@@ -57,6 +30,34 @@ return require("packer").startup(function()
 		requires = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("todo-comments").setup()
+		end,
+	})
+
+	-- COLORSCHEME
+	use({ "typicode/bg.nvim" })
+
+	use({
+		"effektivnayarabota1/nvim-colorscheme",
+		config = function()
+			require("plugins/configs/nvim-colorscheme")
+		end,
+	})
+
+	-- EDITOR
+	use("github/copilot.vim")
+	use("tpope/vim-surround")
+
+	use({
+		"lukas-reineke/indent-blankline.nvim",
+		config = function()
+			require("ibl").setup()
+		end,
+	})
+
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup()
 		end,
 	})
 
