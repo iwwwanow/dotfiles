@@ -4,5 +4,8 @@
     "dialect": "sqlite",
     "linesBetweenQueries": 1
   },
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "tsserver.log": "normal",
+  "git.enableGutters": true,
+  "snippets.ultisnips.pythonPrompt": false
 }

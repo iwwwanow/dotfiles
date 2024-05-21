@@ -44,7 +44,7 @@ return require("packer").startup(function()
 	})
 
 	-- EDITOR
-	use("github/copilot.vim")
+	-- use("github/copilot.vim")
 	use("tpope/vim-surround")
 
 	use({
@@ -80,6 +80,7 @@ return require("packer").startup(function()
 	})
 
 	-- SYSTEM
+	use("lbrayner/vim-rzip")
 	use({
 		"stevearc/oil.nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
