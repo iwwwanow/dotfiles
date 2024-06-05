@@ -24,17 +24,18 @@ end
 im("jj", "<Esc>")
 
 -- COLORSCHEME
-m("<S-B>l", "<cmd>:set background=light<cr>")
-m("<S-B>d", "<cmd>:set background=dark<cr>")
+-- m("<S-B>l", "<cmd>:set background=light<cr>")
+-- m("<S-B>d", "<cmd>:set background=dark<cr>")
 
 -- TERMINAL
-m("<C-t>", "<cmd>:vs | terminal<cr>")
+m("<C-t>", "<cmd>:sp | terminal<cr>")
 tm("<C-t>", "<C-\\><C-n> <cmd>:q<cr>")
-tm("<Esc>", "<C-\\><C-n> <cmd>:q<cr>")
+-- tm("<Esc>", "<C-\\><C-n> <cmd>:q<cr>")
 
 -- TABS
 m("<S-j>", "gT")
 m("<S-k>", "gt")
+m("<S-t>", "<cmd>:tabnew | :Oil<cr>")
 
 -- BUFFERS
 m("<S-h>", "<C-O>")

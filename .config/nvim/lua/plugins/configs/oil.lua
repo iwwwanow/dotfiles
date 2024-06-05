@@ -1,7 +1,7 @@
 require("oil").setup({
 	-- Oil will take over directory buffers (e.g. `vim .` or `:e src/`)
 	-- Set to false if you still want to use netrw.
-	default_file_explorer = false,
+	default_file_explorer = true,
 	-- Id is automatically added at the beginning, and name at the end
 	-- See :help oil-columns
 	columns = {
@@ -57,8 +57,9 @@ require("oil").setup({
 	-- Set to `false` to remove a keymap
 	-- See :help oil-actions for a list of all available actions
 	keymaps = {
-		["g?"] = "actions.show_help",
+		["?"] = "actions.show_help",
 		["l"] = "actions.select",
+		["<CR>"] = "actions.select",
 		["<C-s>"] = "actions.select_vsplit",
 		["<C-h>"] = "actions.select_split",
 		["<C-t>"] = "actions.select_tab",
@@ -173,6 +174,6 @@ require("oil").setup({
 	},
 	-- Configuration for the floating keymaps help window
 	keymaps_help = {
-		border = "rounded",
+		border = "",
 	},
 })

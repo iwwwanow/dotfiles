@@ -93,6 +93,9 @@ return require("packer").startup(function()
 	use({
 		"neoclide/coc.nvim",
 		branch = "release",
+		config = function()
+			require("plugins/configs/coc")
+		end,
 	})
 
 	use({
@@ -103,7 +106,12 @@ return require("packer").startup(function()
 		end,
 	})
 
-	use({ "nvim-treesitter/nvim-treesitter-context" })
+	use({
+		"nvim-treesitter/nvim-treesitter-context",
+		config = function()
+			require("plugins/configs/nvim-treesitter-context")
+		end,
+	})
 
 	use({ "luckasRanarison/tree-sitter-hypr" })
 
