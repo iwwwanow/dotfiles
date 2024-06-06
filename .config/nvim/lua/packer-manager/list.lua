@@ -106,12 +106,12 @@ return require("packer").startup(function()
 		end,
 	})
 
-	use({
-		"nvim-treesitter/nvim-treesitter-context",
-		config = function()
-			require("plugins/configs/nvim-treesitter-context")
-		end,
-	})
+	-- use({
+	-- 	"nvim-treesitter/nvim-treesitter-context",
+	-- 	config = function()
+	-- 		require("plugins/configs/nvim-treesitter-context")
+	-- 	end,
+	-- })
 
 	use({ "luckasRanarison/tree-sitter-hypr" })
 

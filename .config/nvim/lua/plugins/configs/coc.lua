@@ -136,8 +136,8 @@ keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', o
 
 -- Use CTRL-S for selections ranges
 -- Requires 'textDocument/selectionRange' support of language server
-keyset("n", "<C-s>", "<Plug>(coc-range-select)", { silent = true })
-keyset("x", "<C-s>", "<Plug>(coc-range-select)", { silent = true })
+keyset("n", "<S-s>", "<Plug>(coc-range-select)", { silent = true })
+keyset("x", "<S-s>", "<Plug>(coc-range-select)", { silent = true })
 
 -- Add `:Format` command to format current buffer
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
