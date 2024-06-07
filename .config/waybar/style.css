@@ -14,6 +14,8 @@
 * {
   font-family: Iosevka Term;
   font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 window#waybar {
@@ -47,7 +49,8 @@ button {
 #backlight,
 #battery,
 #clock,
-#language {
+#language,
+#custom-timew {
   padding: 0 6px;
   color: @medium;
   background-color: @dark;
@@ -55,21 +58,21 @@ button {
 
 #window,
 #workspaces {
-  margin: 0 4px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+  margin: 0 4px 0 0;
 }
 
 #clock {
   color: @white;
-  /* font-weight: bold; */
-  /* font-style: italic; */
+}
+
+#custom-timew {
+  margin: 0;
+}
+
+#custom-timew.active {
+  /* color: @green; */
+  color: @dark;
+  background-color: @light;
 }
 
 #battery {

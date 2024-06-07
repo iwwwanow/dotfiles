@@ -4,16 +4,23 @@
     "spacing": 4, // Gaps between modules (4px)
 
     // ORDER OF THE MODULES
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/timew", "hyprland/workspaces", "hyprland/window"],
 
 		"modules-center": ["clock"],
 
-    "modules-right": ["backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language" ],
+    "modules-right": [  "backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language" ],
 
 		"hyprland/window": {
     		"max-length": 200,
     		"separate-outputs": true
 		},
+
+		"custom/timew": {
+				"exec": "~/.config/waybar/scripts/timew.sh",
+				"on-click": "~/.config/waybar/scripts/timew-toggle.sh",
+				"return-type": "json",
+				"restart-interval": 1,
+			},
 
      "hyprland/workspaces": {
          "disable-scroll": true,
