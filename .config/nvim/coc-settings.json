@@ -7,5 +7,6 @@
   "svelte.enable-ts-plugin": true,
   "tsserver.log": "normal",
   "git.enableGutters": true,
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "tsserver.tsdk": "/home/operator/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib"
 }
