@@ -22,15 +22,11 @@ function tm(key, command)
 end
 
 im("jj", "<Esc>")
+im("оо", "<Esc>")
 
 -- COLORSCHEME
 -- m("<S-B>l", "<cmd>:set background=light<cr>")
 -- m("<S-B>d", "<cmd>:set background=dark<cr>")
-
--- TERMINAL
-m("<C-t>", "<cmd>:sp | terminal<cr>")
-tm("<C-t>", "<C-\\><C-n> <cmd>:q<cr>")
--- tm("<Esc>", "<C-\\><C-n> <cmd>:q<cr>")
 
 -- TABS
 m("<S-j>", "gT")
