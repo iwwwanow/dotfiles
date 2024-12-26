@@ -4,7 +4,7 @@
     "spacing": 4, // Gaps between modules (4px)
 
     // ORDER OF THE MODULES
-    "modules-left": ["custom/timew", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/timew", "custom/wf-recorder", "hyprland/workspaces", "hyprland/window"],
 
 		"modules-center": ["clock"],
 
@@ -18,6 +18,13 @@
 		"custom/timew": {
 				"exec": "~/.config/waybar/scripts/timew.sh",
 				"on-click": "~/.config/waybar/scripts/timew-toggle.sh",
+				"return-type": "json",
+				"restart-interval": 1,
+			},
+
+		"custom/wf-recorder": {
+				"exec": "~/.config/waybar/scripts/recorder-icon-processor.mjs",
+				"on-click": "~/.config/waybar/scripts/recorder-kill.mjs",
 				"return-type": "json",
 				"restart-interval": 1,
 			},

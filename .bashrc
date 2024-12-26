@@ -12,6 +12,8 @@ function sleep() {
 
 export EDITOR=/usr/bin/nvim
 
+export NODE_OPTIONS="--max-old-space-size=4096"
+
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='p:preview-tui;d:dragdrop'
 

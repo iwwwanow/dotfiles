@@ -1,7 +1,7 @@
 [user]
 	name = Kirill Ivanov
 	email = kirill-ivanovvvvvvv@yandex.ru
-	signingkey = E4E416CD8A39D584
+	signingkey = 2CC9C8CFEE054985
 [core]
 	editor = nvim
 [commit]
