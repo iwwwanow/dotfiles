@@ -3,16 +3,15 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
 alias s="kitten ssh"
+
+PS1='[\u@\h \W]\$ '
 
 function sleep() {
  	 systemctl suspend
 }
 
 export EDITOR=/usr/bin/nvim
-
-export NODE_OPTIONS="--max-old-space-size=4096"
 
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='p:preview-tui;d:dragdrop'
@@ -61,3 +60,10 @@ n ()
 }
 
 export GPG_TTY=$(tty)
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
