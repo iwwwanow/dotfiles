@@ -4,11 +4,11 @@
     "spacing": 4, // Gaps between modules (4px)
 
     // ORDER OF THE MODULES
-    "modules-left": ["custom/timew", "custom/wf-recorder", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/timew", "custom/wf-recorder", "sway/workspaces", "sway/mode", "sway/window", "hyprland/workspaces", "hyprland/window"],
 
 		"modules-center": ["clock"],
 
-    "modules-right": [  "backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language" ],
+    "modules-right": [  "backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language", "sway/language" ],
 
 		"hyprland/window": {
     		"max-length": 200,
@@ -49,6 +49,12 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+
+		"keyboard": {
+        "format": "{layout}",
+        "layout": "us,ru",
+        "tooltip": false
     },
 
     "clock": {
