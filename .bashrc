@@ -3,7 +3,11 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
 alias s="kitten ssh"
+alias n="nvim ."
+alias h="hledger add"
+alias l="lazygit"
 
 PS1='[\u@\h \W]\$ '
 
@@ -35,3 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
