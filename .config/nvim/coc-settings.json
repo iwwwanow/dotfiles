@@ -8,5 +8,5 @@
   "tsserver.log": "normal",
   "git.enableGutters": true,
   "snippets.ultisnips.pythonPrompt": false,
-  "tsserver.tsdk": "/home/operator/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib"
+  "tsserver.tsdk": "/home/ubuntu-operator/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib"
 }
