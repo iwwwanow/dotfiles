@@ -2,4 +2,5 @@
 .local/share/fonts/*
 
 .config/coc/**
+!.config/coc/extensions/
 !.config/coc/extensions/package.json
