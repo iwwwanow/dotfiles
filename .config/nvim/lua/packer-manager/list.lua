@@ -37,7 +37,7 @@ return require("packer").startup(function()
 	use({ "typicode/bg.nvim" })
 
 	use({
-		"effektivnayarabota1/nvim-colorscheme",
+		"kirill-ivanovvv/nvim-colorscheme",
 		config = function()
 			require("plugins/configs/nvim-colorscheme")
 		end,
@@ -47,12 +47,12 @@ return require("packer").startup(function()
 	-- use("github/copilot.vim")
 	use("tpope/vim-surround")
 
-	use({
-		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require("ibl").setup()
-		end,
-	})
+	-- use({
+	-- 	"lukas-reineke/indent-blankline.nvim",
+	-- 	config = function()
+	-- 		require("ibl").setup()
+	-- 	end,
+	-- })
 
 	use({
 		"windwp/nvim-autopairs",
