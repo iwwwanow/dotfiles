@@ -1,6 +1,7 @@
 .config/nvim/plugin
 .local/share/fonts/*
+.bash_profile
 
 .config/coc/**
 !.config/coc/extensions/
-!.config/coc/extensions/**/*
+!.config/coc/extensions/package.json
