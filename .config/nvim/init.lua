@@ -1,4 +1,6 @@
-require("core")
-require("packer-manager")
+require("core.options")
+require("core.mappings")
+require("core.autocmds")
 
--- require("oil").setup()
+		require("keymaps")
+require("plugins")

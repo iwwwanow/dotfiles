@@ -13,14 +13,14 @@ return require("packer").startup(function()
 	use({
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		config = function()
-			require("plugins/configs/nvim-ts-context-commentstring")
+			require("plugins/nvim-ts-context-commentstring")
 		end,
 	})
 
 	use({
 		"terrortylor/nvim-comment",
 		config = function()
-			require("plugins/configs/nvim-comment")
+			require("plugins/nvim-comment")
 		end,
 	})
 
@@ -39,7 +39,7 @@ return require("packer").startup(function()
 	use({
 		"kirill-ivanovvv/nvim-colorscheme",
 		config = function()
-			require("plugins/configs/nvim-colorscheme")
+			require("plugins/nvim-colorscheme")
 		end,
 	})
 
@@ -65,8 +65,7 @@ return require("packer").startup(function()
 	use({
 		"luukvbaal/nnn.nvim",
 		config = function()
-			require("plugins/keymaps/nnn")
-			require("plugins/configs/nnn")
+			require("plugins/nnn")
 		end,
 	})
 
@@ -74,8 +73,7 @@ return require("packer").startup(function()
 		"nvim-telescope/telescope.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 		config = function()
-			require("plugins/keymaps/telescope")
-			require("plugins/configs/telescope")
+			require("plugins/telescope")
 		end,
 	})
 
@@ -85,8 +83,7 @@ return require("packer").startup(function()
 		"stevearc/oil.nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			require("plugins/configs/oil")
-			require("plugins/keymaps/oil")
+			require("plugins/oil")
 		end,
 	})
 
@@ -94,7 +91,7 @@ return require("packer").startup(function()
 		"neoclide/coc.nvim",
 		branch = "release",
 		config = function()
-			require("plugins/configs/coc")
+			require("plugins/coc")
 		end,
 	})
 
@@ -102,14 +99,14 @@ return require("packer").startup(function()
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
 			local ts_update = require("nvim-treesitter.install").update()
-			require("plugins/configs/treesitter")
+			require("plugins/treesitter")
 		end,
 	})
 
 	-- use({
 	-- 	"nvim-treesitter/nvim-treesitter-context",
 	-- 	config = function()
-	-- 		require("plugins/configs/nvim-treesitter-context")
+	-- 		require("plugins/nvim-treesitter-context")
 	-- 	end,
 	-- })
 

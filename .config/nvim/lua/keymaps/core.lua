@@ -1,32 +1,7 @@
-local map = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = false }
-
-function m(key, command)
-	map("", key, command, default_opts)
-end
-
-function nm(key, command)
-	map("n", key, command, default_opts)
-end
-
-function im(key, command)
-	map("i", key, command, default_opts)
-end
-
-function vm(key, command)
-	map("v", key, command, { noremap = true })
-end
-
-function tm(key, command)
-	map("t", key, command, { noremap = true })
-end
+local im=require('keymaps.utils').im
+local m=require('keymaps.utils').m
 
 im("jj", "<Esc>")
-im("оо", "<Esc>")
-
--- COLORSCHEME
--- m("<S-B>l", "<cmd>:set background=light<cr>")
--- m("<S-B>d", "<cmd>:set background=dark<cr>")
 
 -- TABS
 m("<S-j>", "gT")
@@ -66,3 +41,5 @@ m("<A-j>", "<C-W>-")
 m("<A-k>", "<C-W>+")
 m("<A-l>", "<C-W>>")
 m("<A-Space>", "<C-W>=")
+
+m("<space>s", ":set spell!<cr>")
