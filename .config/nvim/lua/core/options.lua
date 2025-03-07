@@ -23,7 +23,7 @@ opt.tabstop = 4 -- 1 tab == 4 spaces
 opt.smartindent = true -- Подстраивать новые строки под предыдущий отступ
 
 opt.list = true
-opt.listchars = { eol = "󰘌", tab = "--.", trail="T", leadmultispace=". ", extends="#", precedes="#" } -- отображение конца строки и тд
+opt.listchars = { eol = "󰘌", tab = "--.", trail="⊥", leadmultispace=". ", extends="#", precedes="#" } -- отображение конца строки и тд
 
 opt.clipboard = "unnamedplus" -- Используем системный буфер обмена
 opt.completeopt = "menuone,noselect" -- Автодополнение (встроенное в Neovim)
