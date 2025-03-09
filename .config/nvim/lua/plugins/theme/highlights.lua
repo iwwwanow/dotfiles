@@ -3,6 +3,8 @@ local M = {}
 require("plugins/theme/setters/core-settings").setCoreSettings()
 require("plugins/theme/setters/terminal-colors").setTerminalColors()
 
+local mergeTables = require("plugins/theme/utils/merge-tables").mergeTables
+
 local setHighlights = require("plugins/theme/setters/highlights").setHighlights
 
 local coreHighlights = require("plugins/theme/highlights/core")
@@ -11,14 +13,17 @@ local debugHighlights = require("plugins/theme/highlights/ts")
 local linkHighlights = require("plugins/theme/highlights/ts")
 
 -- TODO to utils
--- local inspect = vim.inspect
--- vim.notify(inspect(colors), vim.log.levels.DEBUG)
+local inspect = vim.inspect
+-- vim.notify(inspect(coreHighlights), vim.log.levels.DEBUG)
 
 function M.setup()
-	setHighlights(coreHighlights)
-	setHighlights(tsHighlights)
-	setHighlights(debugHighlights)
-	setHighlights(linkHighlights)
+	local tables = mergeTables(coreHighlights, tsHighlights, debugHighlights, linkHighlights)
+	setHighlights(tables)
+	
+	-- setHighlights(tsHighlights)
+	-- setHighlights(coreHighlights)
+	-- setHighlights(debugHighlights)
+	-- setHighlights(linkHighlights)
 end
 
 return M
