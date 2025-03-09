@@ -9,5 +9,11 @@
   "git.enableGutters": true,
   "snippets.ultisnips.pythonPrompt": false,
   "tsserver.tsdk": "/home/ubuntu-operator/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.format.enable": true,
+  "Lua.format.defaultConfig": {
+    "indent_style": "space",
+    "indent_size": "2"
+  }
 }

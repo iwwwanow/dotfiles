@@ -36,12 +36,20 @@ return require("packer").startup(function()
 	-- COLORSCHEME
 	use({ "typicode/bg.nvim" })
 
-	use({
-		"kirill-ivanovvv/nvim-colorscheme",
-		config = function()
-			require("plugins/nvim-colorscheme")
-		end,
-	})
+	-- use({
+	-- 	"local-theme",
+	-- 	config = function()
+	-- 		require('plugins.theme').setup()
+	-- 	end,
+	-- 	path = '~/.config/nvim/lua/plugins/theme'
+	-- })
+
+	-- use({
+	-- 	"kirill-ivanovvv/nvim-colorscheme",
+	-- 	config = function()
+	-- 		require("plugins/nvim-colorscheme")
+	-- 	end,
+	-- })
 
 	-- EDITOR
 	-- use("github/copilot.vim")
