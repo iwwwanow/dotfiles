@@ -19,11 +19,6 @@ local inspect = vim.inspect
 function M.setup()
 	local tables = mergeTables(coreHighlights, tsHighlights, debugHighlights, linkHighlights)
 	setHighlights(tables)
-	
-	-- setHighlights(tsHighlights)
-	-- setHighlights(coreHighlights)
-	-- setHighlights(debugHighlights)
-	-- setHighlights(linkHighlights)
 end
 
 return M
