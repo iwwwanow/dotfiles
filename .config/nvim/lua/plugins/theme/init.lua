@@ -9,6 +9,7 @@ function M.setup()
 end
 
 -- TODO to functions
+-- TODO как я вообще подключал эту тему
 vim.api.nvim_create_user_command("ShowHlGroup", function()
 	local line = vim.fn.line('.')
 	local col = vim.fn.col('.')
