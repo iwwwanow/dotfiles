@@ -22,12 +22,45 @@ local colors                 = {
 	base15 = "#f0f0f0",
 }
 
-colors.red                   = "#FF0000"
-colors.black                 = "#000000"
 
 -- aliases
 colors.fg                    = colors.base8
 colors.bg                    = colors.base15
+-- TODO 4 pts darker
+colors.bg_alt                = "#E6E6E6"
+colors.white                = "#FFFFFF"
+
+-- TODO: зафиксировать, сделать для терминала аналогично
+colors.red = "#FF0000"
+colors.neutral_red = "#FF9999"
+colors.faded_red = "#CC0000"
+
+colors.orange = "#FF8000"
+colors.neutral_orange = "#FFCC99"
+colors.faded_orange = "#CC6600"
+
+colors.yellow = "FFFF00"
+colors.neutral_yellow = "#FFFF99"
+colors.faded_yellow = "#CCCC00"
+
+colors.green = "#00FF00"
+colors.neutral_green = "#99FF99"
+colors.faded_green = "#00CC00"
+
+colors.blue = "#0000FF"
+colors.neutral_blue = "#9999FF"
+colors.faded_blue = "#0000CC"
+
+colors.skyblue = "#00FFFF"
+colors.neutral_skyblue = "#E6FFFF"
+colors.faded_skyblue = "#00CCCC"
+
+colors.purple = "#FF00FF"
+colors.neutral_purple = "#FF99FF"
+colors.faded_purple = "#CC00CC"
+
+colors.black                 = "#000000"
+
 -- colors.bg_alt                = colors.base1
 -- colors.neutral_green         = colors.base2
 -- colors.neutral_blue          = colors.base4

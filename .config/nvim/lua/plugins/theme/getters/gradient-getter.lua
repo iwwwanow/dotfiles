@@ -1,11 +1,8 @@
--- Функция для линейной интерполяции между двумя значениями
 local function lerp(a, b, t)
 	return a + (b - a) * t
 end
 
--- Функция для преобразования hex-цвета (#RRGGBB) в таблицу с r, g, b значениями (числа от 0 до 255)
 local function hexToRGB(hex)
-	-- Убираем символ '#' если он присутствует
 	hex = hex:gsub("#", "")
 	if #hex ~= 6 then
 		error("Неверный формат hex-цвета: " .. hex)
@@ -16,14 +13,10 @@ local function hexToRGB(hex)
 	return { r = r, g = g, b = b }
 end
 
--- Функция для преобразования цвета (таблица {r, g, b}) в hex-строку (#RRGGBB)
 local function rgbToHex(color)
 	return string.format("#%02X%02X%02X", math.floor(color.r + 0.5), math.floor(color.g + 0.5), math.floor(color.b + 0.5))
 end
 
--- Функция для создания градации между двумя hex-цветами
--- startHex, endHex - строки вида "#RRGGBB"
--- steps - количество шагов (минимум 2)
 local function createHexColorGradient(startHex, endHex, steps)
 	if steps < 2 then
 		error("Количество шагов должно быть не меньше 2")

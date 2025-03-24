@@ -8,16 +8,15 @@ local mergeTables = require("plugins/theme/utils/merge-tables").mergeTables
 local setHighlights = require("plugins/theme/setters/highlights").setHighlights
 
 local coreHighlights = require("plugins/theme/highlights/core")
-local tsHighlights = require("plugins/theme/highlights/ts")
-local debugHighlights = require("plugins/theme/highlights/ts")
-local linkHighlights = require("plugins/theme/highlights/ts")
+local syntaxHighlights = require("plugins/theme/highlights/syntax")
+local pluginHighlights = require("plugins/theme/highlights/plugin")
 
 -- TODO to utils
 local inspect = vim.inspect
 -- vim.notify(inspect(coreHighlights), vim.log.levels.DEBUG)
 
 function M.setup()
-	local tables = mergeTables(coreHighlights, tsHighlights, debugHighlights, linkHighlights)
+	local tables = mergeTables(coreHighlights, syntaxHighlights, pluginHighlights)
 	setHighlights(tables)
 end
 
