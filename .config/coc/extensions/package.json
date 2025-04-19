@@ -11,7 +11,11 @@
     "coc-svelte": ">=0.5.0",
     "coc-protobuf": ">=0.0.2",
     "coc-zig": ">=0.6.1",
-    "coc-lua": ">=2.0.6"
+    "coc-lua": ">=2.0.6",
+    "coc-pyright": ">=1.1.395",
+    "coc-java": ">=1.26.1",
+    "coc-clangd": ">=0.32.0",
+    "coc-docker": ">=1.0.2"
   },
-  "lastUpdate": 1742723391603
+  "lastUpdate": 1745000317926
 }
