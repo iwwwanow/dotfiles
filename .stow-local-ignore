@@ -1,4 +1,5 @@
 cron
 .stowrc
+.gitignore
 .git
 ^/README.*
