@@ -142,3 +142,5 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/p
 
 alias projects="cd ~/Projects"
 alias scripts="cd ~/Scripts"
+alias personal="cd ~/Documents/personal-data && nvim ."
+alias n="nvim ."
