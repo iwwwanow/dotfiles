@@ -144,3 +144,7 @@ alias projects="cd ~/Projects"
 alias scripts="cd ~/Scripts"
 alias personal="cd ~/Documents/personal-data && nvim ."
 alias n="nvim ."
+
+# theme
+
+fpath+=($HOME/.zsh/pure)
