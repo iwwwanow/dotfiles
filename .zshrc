@@ -144,6 +144,7 @@ alias projects="cd ~/Projects"
 alias scripts="cd ~/Scripts"
 alias personal="cd ~/Documents/personal-data && nvim ."
 alias n="nvim ."
+alias gb='git -c pager.branch=false branch --sort=-committerdate --format="%(color:yellow)%(refname:short)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative))%(color:reset)"'
 
 # theme
 
