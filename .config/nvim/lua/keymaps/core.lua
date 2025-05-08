@@ -42,4 +42,4 @@ m("<A-k>", "<C-W>+")
 m("<A-l>", "<C-W>>")
 m("<A-Space>", "<C-W>=")
 
-m("<space>s", ":set spell!<cr>")
+vim.api.nvim_set_keymap("n", "p", '"0p', { noremap = true })
