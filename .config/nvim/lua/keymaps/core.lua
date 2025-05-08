@@ -1,5 +1,5 @@
-local im=require('keymaps.utils').im
-local m=require('keymaps.utils').m
+local im = require('keymaps.utils').im
+local m = require('keymaps.utils').m
 
 im("jj", "<Esc>")
 
