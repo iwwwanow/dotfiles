@@ -41,5 +41,3 @@ m("<A-j>", "<C-W>-")
 m("<A-k>", "<C-W>+")
 m("<A-l>", "<C-W>>")
 m("<A-Space>", "<C-W>=")
-
-vim.api.nvim_set_keymap("n", "p", '"0p', { noremap = true })
