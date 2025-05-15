@@ -3,7 +3,7 @@ local m = require('keymaps.utils').m
 
 im("jj", "<Esc>")
 
-m("<C-y>", "\"ayy")
+m("<C-y>", "\"ay")
 m("<C-p>", "\"ap")
 
 -- TABS
