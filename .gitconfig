@@ -1,7 +1,7 @@
 [user]
 	name = Kirill Ivanov
-	email = iwwwanow.work@yandex.ru
-	signingkey = EEE713B61ACAB725
+	email = ik@atls.team
+	signingkey = A1758AF11633B4A6
 [core]
 	editor = nvim
 [commit]
