@@ -8,7 +8,7 @@
   "tsserver.log": "normal",
   "git.enableGutters": true,
   "snippets.ultisnips.pythonPrompt": false,
-  "tsserver.tsdk": "/home/ubuntu-operator/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib",
+  "tsserver.tsdk": "/home/ubuntu-operator/dotfiles/.config/coc/extensions/node_modules/coc-tsserver/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "Lua.diagnostics.globals": ["vim"],
   "Lua.format.enable": true,
