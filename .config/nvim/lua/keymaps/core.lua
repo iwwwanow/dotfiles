@@ -2,6 +2,15 @@ local im = require('keymaps.utils').im
 local m = require('keymaps.utils').m
 
 im("jj", "<Esc>")
+im("jj", "<Esc>")
+
+m("<leader>td", "iTODO ")
+m("<leader>fx", "iFIX ")
+m("<leader>in", "iINFO ")
+
+-- vim.api.nvim_set_keymap('n', '<leader>td', 'iTODO <Esc>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>fx', 'iFIX <Esc>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>in', 'iINFO <Esc>', { noremap = true, silent = true })
 
 m("<C-y>", "\"ay")
 m("<C-p>", "\"ap")
