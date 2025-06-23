@@ -5,8 +5,13 @@ im("jj", "<Esc>")
 im("jj", "<Esc>")
 
 m("<leader>td", "iTODO ")
+im("<leader>td", "TODO ")
+
 m("<leader>fx", "iFIX ")
+im("<leader>fx", "FIX ")
+
 m("<leader>in", "iINFO ")
+im("<leader>in", "INFO ")
 
 -- vim.api.nvim_set_keymap('n', '<leader>td', 'iTODO <Esc>', { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap('n', '<leader>fx', 'iFIX <Esc>', { noremap = true, silent = true })
