@@ -18,7 +18,7 @@
     "coc-docker": ">=1.0.2",
     "coc-phpls": ">=2.2.4"
   },
-  "lastUpdate": 1750783395286,
+  "lastUpdate": 1752427356512,
   "disabled": [
     "coc-svelte"
   ]
