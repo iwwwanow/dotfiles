@@ -1,3 +1,5 @@
+require("packer-compiled")
+
 require("core.options")
 require("core.autocmds")
 
