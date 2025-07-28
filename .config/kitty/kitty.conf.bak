@@ -6,12 +6,12 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family     Iosevka Term
-italic_font     Iosevka Term Italic
-bold_font       Iosevka Term Bold
-bold_italic_font Iosevka Term Bold Oblique
+font_family     IosevkaTermSS14 Nerd Font
+# italic_font     IosevkaTermSS14 Nerd Font
+# bold_font       IosevkaTerm NF
+# bold_italic_font IosevkaTerm NF
 
-font_size 11
+font_size 12
 
 # font_family     iosevka 
 # bold_font        auto
