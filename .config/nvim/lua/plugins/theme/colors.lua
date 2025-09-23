@@ -4,62 +4,66 @@ local mergeTablesUtilsModule = require('plugins/theme/utils/merge-tables')
 local M                      = {}
 
 local colors                 = {
-	base0  = "#202020",
-	base1  = "#c30670",
-	base2  = "#10a778",
-	base3  = "#a79c14",
-	base4  = "#008ec4",
-	base5  = "#523b78",
-	base6  = "#20a4b9",
-	base7  = "#d9d9d9",
-	base8  = "#414141",
-	base9  = "#fb0079",
-	base10 = "#5ed6ae",
-	base11 = "#f3e42f",
-	base12 = "#20bafb",
-	base13 = "#6854de",
-	base14 = "#4fb8cc",
-	base15 = "#f0f0f0",
+	base0  = "#101010",
+	base1  = "#191919",
+	base2  = "#222222",
+	base3  = "#2b2b2b",
+	base4  = "#343434",
+	base5  = "#3d3d3d",
+	base6  = "#474747",
+	base7  = "#515151",
+	base8  = "#5b5b5b",
+	base9  = "#656565",
+	base10 = "#707070",
+	base11 = "#7a7a7a",
+	base12 = "#8f8f8f",
+	base13 = "#a9a9a9",
+	base14 = "#f0f0f0",
+	base15 = "#ffffff",
 }
 
-
 -- aliases
-colors.fg                    = colors.base8
+colors.fg                    = colors.base2
 colors.bg                    = colors.base15
--- TODO 4 pts darker
-colors.bg_alt                = "#E6E6E6"
-colors.white                = "#FFFFFF"
-
--- TODO: зафиксировать, сделать для терминала аналогично
-colors.red = "#FF0000"
-colors.neutral_red = "#FF9999"
-colors.faded_red = "#CC0000"
-
-colors.orange = "#FF8000"
-colors.neutral_orange = "#FFCC99"
-colors.faded_orange = "#CC6600"
-
-colors.yellow = "FFFF00"
-colors.neutral_yellow = "#FFFF99"
-colors.faded_yellow = "#CCCC00"
-
-colors.green = "#00FF00"
-colors.neutral_green = "#99FF99"
-colors.faded_green = "#00CC00"
-
-colors.blue = "#0000FF"
-colors.neutral_blue = "#9999FF"
-colors.faded_blue = "#0000CC"
-
-colors.skyblue = "#00FFFF"
-colors.neutral_skyblue = "#E6FFFF"
-colors.faded_skyblue = "#00CCCC"
-
-colors.purple = "#FF00FF"
-colors.neutral_purple = "#FF99FF"
-colors.faded_purple = "#CC00CC"
-
+colors.bg_alt                = colors.base14
+colors.white                 = "#ffffff"
 colors.black                 = "#000000"
+
+colors.red                   = "#ff1f3d"
+colors.error                 = colors.red
+colors.neutral_red           = colors.red
+colors.faded_red             = "#b5122c"
+
+colors.yellow                = "#ffd800"
+colors.warning               = colors.yellow
+colors.neutral_yellow        = colors.yellow
+colors.faded_yellow          = "#b89f00"
+
+local accent_dark            = colors.base4
+local accent_mid             = colors.base8
+local accent_light           = colors.base12
+
+colors.orange                = accent_mid
+colors.neutral_orange        = accent_light
+colors.faded_orange          = accent_mid
+
+colors.green                 = accent_mid
+colors.neutral_green         = accent_light
+colors.faded_green           = accent_mid
+
+colors.blue                  = accent_mid
+colors.neutral_blue          = accent_light
+colors.faded_blue            = accent_dark
+
+colors.skyblue               = accent_light
+colors.neutral_skyblue       = colors.base14
+colors.faded_skyblue         = accent_mid
+
+colors.purple                = accent_mid
+colors.neutral_purple        = accent_light
+colors.faded_purple          = accent_dark
+
+colors.pink                  = "#fb0079"
 
 -- colors.bg_alt                = colors.base1
 -- colors.neutral_green         = colors.base2
@@ -85,7 +89,7 @@ colors.black                 = "#000000"
 
 local grayGradation          = gradientGetterModule.createHexColorGradient(colors.fg, colors.bg, 8)
 
-colors.debug                 = "#FF0000"
+colors.debug                 = colors.red
 
 function M.getColors()
 	-- TODO gray gradation; between fg and bg, with steps number
