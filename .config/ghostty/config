@@ -1,4 +1,10 @@
-font-family = "IosevkaTerm Nerd Font Mono"
-font-size = 16
+font-family = "IosevkaTermSS14 Nerd Font"
+font-size = 12
 theme="Adwaita"
 macos-titlebar-style="tabs"
+
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+l=next_tab
+keybind = ctrl+shift+<=move_tab:-1
+keybind = ctrl+shift+.=move_tab:1
