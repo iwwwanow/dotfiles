@@ -1,6 +1,8 @@
 local im = require('keymaps.utils').im
 local m = require('keymaps.utils').m
 
+vim.keymap.set("n", "<CR>", "<Nop>", { desc = "Disable Enter in normal mode" })
+
 im("jj", "<Esc>")
 im("jj", "<Esc>")
 
