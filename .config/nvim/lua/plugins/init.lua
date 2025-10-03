@@ -1,13 +1,26 @@
 return {
-  {
-    "typicode/bg.nvim",
+  -- {
+  --   "typicode/bg.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     pcall(vim.cmd.colorscheme, "bg")
+  --     require("plugins/theme").setup()
+  --   end,
+  -- },
+{
+    "Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
+    
+    -- configure and set on startup
     config = function()
-      pcall(vim.cmd.colorscheme, "bg")
-      require("plugins/theme").setup()
-    end,
-  },
+        vim.g.adwaita_darker = false             -- for darker version
+        vim.g.adwaita_disable_cursorline = false -- to disable cursorline
+        vim.g.adwaita_transparent = false        -- makes the background transparent
+        vim.cmd('colorscheme adwaita')
+    end
+},
   {
     "nvim-lualine/lualine.nvim",
     config = function()
