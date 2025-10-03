@@ -101,7 +101,7 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 		},
 		config = function()
-			require("plugins.lsp").setup()
+			require("plugins/lsp").setup()
 		end,
 	},
 	{

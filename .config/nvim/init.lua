@@ -16,13 +16,6 @@ require("core.autocmds")
 
 local plugins = require("plugins")
 
--- require("lazy").setup(plugins,   
--- { rocks = {
---     		enabled = false
---   }
---   })
-
--- require("lazy").setup(plugins, {})
 require("lazy").setup(plugins)
 
 require("keymaps")
