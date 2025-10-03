@@ -3,8 +3,16 @@ font-size = 12
 theme="Adwaita"
 macos-titlebar-style="tabs"
 
+keybind = ctrl+shift+r=reload_config
+
 keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+h=previous_tab
 keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+<=move_tab:-1
 keybind = ctrl+shift+.=move_tab:1
+
+window-decoration = client
+gtk-toolbar-style = raised-border
+gtk-titlebar-style = tabs
+
+confirm-close-surface = false
