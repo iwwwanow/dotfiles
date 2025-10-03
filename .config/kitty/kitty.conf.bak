@@ -2364,6 +2364,6 @@ map kitty_mod+t new_tab_with_cwd
 #: }}}
 
 # BEGIN_KITTY_THEME
-# Spring
+# Pencil Light
 include current-theme.conf
 # END_KITTY_THEME
