@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 -- require("core.autocmds")
 -- require("keymaps")
 
--- local plugins = require("plugins")
+local plugins = require("plugins")
 
 -- require("lazy").setup(plugins,   
 -- { rocks = {
@@ -23,4 +23,5 @@ vim.opt.rtp:prepend(lazypath)
 --   }
 --   })
 
-require("lazy").setup()
+-- require("lazy").setup(plugins, {})
+require("lazy").setup(plugins)
