@@ -1,6 +1,6 @@
 return {
 {
-    "Mofiqul/adwaita.nvim",
+    				"Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
     
@@ -57,6 +57,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = true,
     config = function()
       require("plugins/telescope")
     end,
