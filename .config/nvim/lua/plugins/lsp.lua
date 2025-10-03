@@ -65,7 +65,6 @@ function M.setup()
         },
       },
     },
-    tsserver = {},
     svelte = {},
     html = {},
     cssls = {},
