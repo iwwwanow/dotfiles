@@ -64,12 +64,6 @@ return {
     end,
   },
   {
-    "luukvbaal/nnn.nvim",
-    config = function()
-      require("plugins/nnn")
-    end,
-  },
-  {
     "nvim-telescope/telescope.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
