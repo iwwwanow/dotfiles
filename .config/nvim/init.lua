@@ -17,8 +17,4 @@ require("keymaps")
 
 local plugins = require("plugins")
 
-require("lazy").setup(plugins, {
-  ui = {
-    border = "rounded",
-  },
-})
+require("lazy").setup(plugins)
