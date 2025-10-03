@@ -24,7 +24,13 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     config = function()
-      require("plugins.lualine").setup()
+      require("plugins.lualine").setup({
+    options = {
+        -- ...
+        theme = "adwaita",
+        -- ...
+    },
+})
     end,
   },
   {
