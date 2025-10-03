@@ -1,13 +1,4 @@
 return {
-  -- {
-  --   "typicode/bg.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     pcall(vim.cmd.colorscheme, "bg")
-  --     require("plugins/theme").setup()
-  --   end,
-  -- },
 {
     "Mofiqul/adwaita.nvim",
     lazy = false,

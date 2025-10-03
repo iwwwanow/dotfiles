@@ -17,4 +17,8 @@ require("keymaps")
 
 local plugins = require("plugins")
 
-require("lazy").setup(plugins)
+require("lazy").setup(plugins,   
+{ rocks = {
+    		enabled = false
+  }
+  })
