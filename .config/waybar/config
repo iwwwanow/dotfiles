@@ -3,17 +3,11 @@
     "height": 24,
     "spacing": 4, // Gaps between modules (4px)
 
-    // ORDER OF THE MODULES
-    "modules-left": ["custom/timew", "custom/wf-recorder", "sway/workspaces", "sway/mode", "sway/window", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/timew", "custom/wf-recorder", "sway/workspaces", "sway/mode", "sway/window"],
 
 		"modules-center": ["clock"],
 
-    "modules-right": [  "backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network",   "battery", "hyprland/language", "sway/language" ],
-
-		"hyprland/window": {
-    		"max-length": 200,
-    		"separate-outputs": true
-		},
+    "modules-right": [  "backlight", "pulseaudio#vol", "pulseaudio#mic", "bluetooth", "network#nw1","network#nw2","network", "battery", "sway/language" ],
 
 		"custom/timew": {
 				"exec": "~/.config/waybar/scripts/timew.sh",
@@ -28,20 +22,6 @@
 				"return-type": "json",
 				"restart-interval": 1,
 			},
-
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-				 "on-click": "activate",
-         "warp-on-scroll": false,
-     },
-
-		"hyprland/language": {
-			// "format": "{short}",
-    	"format-en": "EN",
-    	"format-ru": "RU",
-    	"keyboard-name": "at-translated-set-2-keyboard",
-			"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
-		},
 
     "idle_inhibitor": {
         "format": "{icon}",

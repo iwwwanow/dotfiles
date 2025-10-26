@@ -38,7 +38,7 @@ button {
   background: @dark;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
   color: @black;
   background-color: @white;
 }
