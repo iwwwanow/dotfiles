@@ -1,3 +1,5 @@
+config-file = ?device-specific/config
+
 font-family = "IosevkaTermSS14 Nerd Font"
 font-size = 12
 theme="Adwaita"
