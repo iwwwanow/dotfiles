@@ -151,3 +151,6 @@ alias gb='git -c pager.branch=false branch --sort=-committerdate --format="%(col
 fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
+
+# bun completions
+[ -s "/home/ubuntu-operator/.bun/_bun" ] && source "/home/ubuntu-operator/.bun/_bun"
