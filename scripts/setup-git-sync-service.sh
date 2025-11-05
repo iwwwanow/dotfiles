@@ -30,7 +30,6 @@ if [ ! -f /usr/local/bin/git-sync ]; then
     sudo chmod +x /usr/local/bin/git-sync
 fi
 
-# Настраиваем репозиторий
 echo "🔧 Configuring repository: $REPO_PATH"
 cd "$REPO_PATH"
 git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}.git
