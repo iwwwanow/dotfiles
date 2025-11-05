@@ -5,6 +5,8 @@ cmd([[au BufRead,BufNewFile *.eta set filetype=eta]]) -- eta ident
 cmd([[autocmd BufEnter * set fo-=c fo-=r fo-=o]])     -- Не автокомментировать новые линии
 -- cmd([[autocmd BufEnter * syntax spell toplevel]])
 
+cmd([[autocmd BufWritePre * lua vim.lsp.buf.format({async = false})]])
+
 vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
   group = vim.api.nvim_create_augroup("LspDiagnosticsFloat", { clear = true }),
   callback = function(args)

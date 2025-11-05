@@ -62,13 +62,6 @@ function M.setup()
 				Lua = {
 					diagnostics = { globals = { "vim" } },
 					workspace = { checkThirdParty = false },
-					format = {
-						enable = true,
-						defaultConfig = {
-							indent_style = "space",
-							indent_size = "2",
-						},
-					},
 				},
 			},
 		},
@@ -79,6 +72,7 @@ function M.setup()
 		jsonls = {},
 		bashls = {},
 		clangd = {},
+		marksman = {},
 	}
 
 	mason_lspconfig.setup({

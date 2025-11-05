@@ -18,13 +18,13 @@ opt.updatetime = 300
 opt.backup = false
 opt.writebackup = false
 
-opt.ignorecase = true     -- Игнорировать регистр при поиске
-opt.smartcase = true      -- Не игнорировать регистр, если есть символы в верхнем регистре
-opt.showmatch = true      -- Подсвечивать найденные текстовые объекты
+opt.ignorecase = true  -- Игнорировать регистр при поиске
+opt.smartcase = true   -- Не игнорировать регистр, если есть символы в верхнем регистре
+opt.showmatch = true   -- Подсвечивать найденные текстовые объекты
 
-opt.shiftwidth = 4        -- shift 4 spaces when tab
-opt.tabstop = 4           -- 1 tab == 4 spaces
-opt.smartindent = true    -- Подстраивать новые строки под предыдущий отступ
+opt.shiftwidth = 4     -- shift 4 spaces when tab
+opt.tabstop = 4        -- 1 tab == 4 spaces
+opt.smartindent = true -- Подстраивать новые строки под предыдущий отступ
 
 opt.list = true
 opt.listchars = { eol = "󰘌", tab = "--.", trail = "⊥", leadmultispace = ". ", extends = "#", precedes = "#" } -- отображение конца строки и тд
