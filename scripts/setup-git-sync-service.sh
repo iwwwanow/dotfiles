@@ -34,6 +34,13 @@ echo "🔧 Configuring repository: $REPO_PATH"
 cd "$REPO_PATH"
 git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}.git
 
+echo "🔐 Configuring GPG signing..."
+cd "$REPO_PATH"
+git config user.signingkey ABC123DEF4567890  # замени на твой ID
+git config commit.gpgsign true
+git config --bool branch.master.sync true
+git config --bool branch.master.syncNewFiles true
+
 SCRIPT_DIR=$(cd "$(dirname "$0")/.." && pwd)
 GIT_SYNC_SCRIPT="$SCRIPT_DIR/packages/git-sync/contrib/git-sync-on-inotify"
 
