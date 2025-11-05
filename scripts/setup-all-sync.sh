@@ -9,4 +9,4 @@ $(dirname "$0")/setup-passwords-sync.sh
 echo "---"
 
 echo "All sync services installed!"
-echo "Check status: systemctl status dotfiles-sync pass-sync"
+echo "Check status: systemctl status dotfiles-sync passwords-sync"
