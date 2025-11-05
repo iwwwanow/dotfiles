@@ -13,6 +13,8 @@ fi
 
 echo "Setting up $SERVICE_NAME-sync service..."
 
+DOTFILES_ROOT=$(cd "$(dirname "$0")/.." && pwd)
+
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
