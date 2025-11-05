@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Bootstrapping dotfiles..."
+echo "bootstrapping dotfiles..."
 
 stow -R -v -t ~ .
 
-echo "✅ Dotfiles deployed!"
+echo "dotfiles deployed!"
