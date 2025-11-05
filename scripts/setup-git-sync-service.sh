@@ -13,7 +13,6 @@ fi
 
 echo "Setting up $SERVICE_NAME-sync service..."
 
-# Проверяем токен
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
@@ -25,7 +24,6 @@ if [ -z "$GITHUB_SYNC_TOKEN" ]; then
     exit 1
 fi
 
-# Устанавливаем git-sync (если еще не установлен)
 if [ ! -f /usr/local/bin/git-sync ]; then
     echo "📦 Installing git-sync..."
     sudo cp $(dirname "$0")/../packages/git-sync/git-sync /usr/local/bin/
