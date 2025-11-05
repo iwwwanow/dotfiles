@@ -37,8 +37,8 @@ git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}
 echo "🔐 Configuring GPG signing..."
 cd "$REPO_PATH"
 git config user.name "git-sync-bot"
-# git config --unset user.email
-git config user.signingkey 303CB2F70AC06E1922FE5D3EE937A19A953610CE
+git config user.email "username@users.noreply.github.com"
+git config user.signingkey F29D1461EFA65DF9E766150591D3F7A0888109A5
 git config commit.gpgsign true
 git config --bool branch.master.sync true
 git config --bool branch.master.syncNewFiles true
