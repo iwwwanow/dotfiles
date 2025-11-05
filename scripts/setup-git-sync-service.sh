@@ -36,6 +36,8 @@ echo "🔧 Configuring repository: $REPO_PATH"
 cd "$REPO_PATH"
 git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}.git
 
+GIT_SYNC_SCRIPT="$DOTFILES_ROOT/packages/git-sync/contrib/git-sync-on-inotify"
+
 echo "🔐 Configuring GPG signing..."
 cd "$REPO_PATH"
 git config user.name "git-sync-bot"
