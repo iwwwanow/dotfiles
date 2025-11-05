@@ -8,7 +8,6 @@ GITHUB_REPO="$3"
 if [ -z "$SERVICE_NAME" ] || [ -z "$REPO_PATH" ] || [ -z "$GITHUB_REPO" ]; then
     echo "Usage: $0 <service-name> <repo-path> <github-repo>"
     echo "Example: $0 dotfiles ~/dotfiles iwwwanow/dotfiles"
-    echo "Example: $0 pass ~/.password-store iwwwanow/pass"
     exit 1
 fi
 
