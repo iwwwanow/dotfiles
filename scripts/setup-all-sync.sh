@@ -7,6 +7,7 @@ $(dirname "$0")/setup-dotfiles-sync.sh
 echo "---"
 $(dirname "$0")/setup-passwords-sync.sh
 echo "---"
+$(dirname "$0")/setup-notes-sync.sh
 
 echo "All sync services installed!"
 echo "Check status: systemctl status dotfiles-sync passwords-sync"
