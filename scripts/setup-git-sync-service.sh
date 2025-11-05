@@ -36,6 +36,7 @@ git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}
 
 echo "🔐 Configuring GPG signing..."
 cd "$REPO_PATH"
+git config user.name "Git Sync Bot"
 git config --unset user.email  # удаляем почту
 git config user.signingkey 303CB2F70AC06E1922FE5D3EE937A19A953610CE
 git config commit.gpgsign true
