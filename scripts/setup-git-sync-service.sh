@@ -48,7 +48,7 @@ Type=simple
 User=$USER
 Group=$USER
 WorkingDirectory=$REPO_PATH
-ExecStart=$(dirname "$0")/../packages/git-sync/contrib/git-sync-on-inotify
+ExecStart=$GIT_SYNC_SCRIPT
 Restart=always
 RestartSec=10
 
