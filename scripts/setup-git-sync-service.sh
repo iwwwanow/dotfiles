@@ -34,6 +34,9 @@ echo "🔧 Configuring repository: $REPO_PATH"
 cd "$REPO_PATH"
 git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}.git
 
+SCRIPT_DIR=$(cd "$(dirname "$0")/.." && pwd)
+GIT_SYNC_SCRIPT="$SCRIPT_DIR/packages/git-sync/contrib/git-sync-on-inotify"
+
 echo "Creating systemd service: ${SERVICE_NAME}-sync"
 sudo tee /etc/systemd/system/${SERVICE_NAME}-sync.service > /dev/null <<EOF
 [Unit]
