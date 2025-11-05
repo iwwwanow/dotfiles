@@ -53,7 +53,6 @@ RestartSec=10
 WantedBy=multi-user.target
 EOF
 
-# Включаем и запускаем
 sudo systemctl daemon-reload
 sudo systemctl enable ${SERVICE_NAME}-sync
 sudo systemctl start ${SERVICE_NAME}-sync
