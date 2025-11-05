@@ -34,8 +34,7 @@ echo "🔧 Configuring repository: $REPO_PATH"
 cd "$REPO_PATH"
 git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}.git
 
-# Создаем сервис
-echo "📝 Creating systemd service: ${SERVICE_NAME}-sync"
+echo "Creating systemd service: ${SERVICE_NAME}-sync"
 sudo tee /etc/systemd/system/${SERVICE_NAME}-sync.service > /dev/null <<EOF
 [Unit]
 Description=Git Sync for ${SERVICE_NAME}
