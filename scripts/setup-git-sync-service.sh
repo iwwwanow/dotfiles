@@ -57,6 +57,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable ${SERVICE_NAME}-sync
 sudo systemctl start ${SERVICE_NAME}-sync
 
-echo "✅ ${SERVICE_NAME}-sync service installed and started"
-echo "📁 Monitoring: $REPO_PATH"
-echo "🔄 Check status: systemctl status ${SERVICE_NAME}-sync"
+echo "${SERVICE_NAME}-sync service installed and started"
+echo "Monitoring: $REPO_PATH"
+echo "Check status: systemctl status ${SERVICE_NAME}-sync"
