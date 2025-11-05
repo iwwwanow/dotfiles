@@ -142,7 +142,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/p
 
 alias projects="cd ~/Projects"
 alias scripts="cd ~/Scripts"
-alias personal="cd ~/Documents/personal-data && nvim ."
 alias n="nvim ."
 alias gb='git -c pager.branch=false branch --sort=-committerdate --format="%(color:yellow)%(refname:short)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative))%(color:reset)"'
 
@@ -154,3 +153,6 @@ prompt pure
 
 # bun completions
 [ -s "/home/ubuntu-operator/.bun/_bun" ] && source "/home/ubuntu-operator/.bun/_bun"
+
+# Load local settings (not in git)
+if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
