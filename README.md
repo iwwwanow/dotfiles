@@ -1,1 +1,3 @@
-stow -R -v -t ~ .
+# dotfiles
+
+`./scripts/bootstrap.sh`
