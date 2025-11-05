@@ -39,7 +39,6 @@ git remote set-url origin https://${GITHUB_SYNC_TOKEN}@github.com/${GITHUB_REPO}
 GIT_SYNC_SCRIPT="$DOTFILES_ROOT/packages/git-sync/contrib/git-sync-on-inotify"
 
 echo "🔐 Configuring GPG signing..."
-cd "$REPO_PATH"
 git config user.name "git-sync-bot"
 git config user.email "username@users.noreply.github.com"
 git config user.signingkey F29D1461EFA65DF9E766150591D3F7A0888109A5
