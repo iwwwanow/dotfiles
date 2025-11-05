@@ -46,9 +46,6 @@ git config commit.gpgsign true
 git config --bool branch.master.sync true
 git config --bool branch.master.syncNewFiles true
 
-SCRIPT_DIR=$(cd "$(dirname "$0")/.." && pwd)
-GIT_SYNC_SCRIPT="$SCRIPT_DIR/packages/git-sync/contrib/git-sync-on-inotify"
-
 echo "Creating systemd service: ${SERVICE_NAME}-sync"
 sudo tee /etc/systemd/system/${SERVICE_NAME}-sync.service > /dev/null <<EOF
 [Unit]
