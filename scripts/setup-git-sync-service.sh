@@ -41,7 +41,7 @@ GIT_SYNC_SCRIPT="$DOTFILES_ROOT/packages/git-sync/contrib/git-sync-on-inotify"
 echo "🔐 Configuring GPG signing..."
 git config user.name "git-sync-bot"
 git config user.email "username@users.noreply.github.com"
-git config user.signingkey F29D1461EFA65DF9E766150591D3F7A0888109A5
+git config user.signingkey C619DE94CFC940FA46B284C759EC6299C890B405
 git config commit.gpgsign true
 git config --bool branch.master.sync true
 git config --bool branch.master.syncNewFiles true
