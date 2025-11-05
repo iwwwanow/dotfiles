@@ -28,7 +28,7 @@ fi
 
 if [ ! -f /usr/local/bin/git-sync ]; then
     echo "📦 Installing git-sync..."
-    sudo cp $(dirname "$0")/../packages/git-sync/git-sync /usr/local/bin/
+    sudo cp "$DOTFILES_ROOT/packages/git-sync/git-sync" /usr/local/bin/
     sudo chmod +x /usr/local/bin/git-sync
 fi
 
