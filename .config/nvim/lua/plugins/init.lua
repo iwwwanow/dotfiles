@@ -128,8 +128,8 @@ return {
 					json = { "prettier" },
 					html = { "prettier" },
 					css = { "prettier" },
-					lua = { "stylua" }, -- для Lua файлов
-					markdown = { "prettier" }, -- ← ДОБАВЬТЕ ЭТУ СТРОКУ
+					lua = { "stylua" },
+					markdown = { "prettier" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
