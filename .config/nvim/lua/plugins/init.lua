@@ -129,6 +129,7 @@ return {
 					html = { "prettier" },
 					css = { "prettier" },
 					lua = { "stylua" }, -- для Lua файлов
+					markdown = { "prettier" }, -- ← ДОБАВЬТЕ ЭТУ СТРОКУ
 				},
 				format_on_save = {
 					timeout_ms = 500,
