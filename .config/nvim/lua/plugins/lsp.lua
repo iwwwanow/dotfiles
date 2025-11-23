@@ -17,10 +17,6 @@ local function lsp_keymaps(bufnr)
 	set("n", "]g", vim.diagnostic.goto_next, "Next diagnostic")
 	set("n", "<leader>D", vim.lsp.buf.hover, "Hover documentation")
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
-
-	vim.api.nvim_buf_create_user_command(bufnr, "Format", function()
-		vim.lsp.buf.format({ async = true })
-	end, { desc = "Format current buffer with LSP" })
 end
 
 function M.setup()
