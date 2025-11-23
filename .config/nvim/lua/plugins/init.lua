@@ -116,6 +116,28 @@ return {
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 	},
 	{
+		"stevearc/conform.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			require("conform").setup({
+				formatters_by_ft = {
+					typescript = { "prettier" },
+					javascript = { "prettier" },
+					typescriptreact = { "prettier" },
+					javascriptreact = { "prettier" },
+					json = { "prettier" },
+					html = { "prettier" },
+					css = { "prettier" },
+					lua = { "stylua" }, -- для Lua файлов
+				},
+				format_on_save = {
+					timeout_ms = 500,
+					lsp_fallback = true,
+				},
+			})
+		end,
+	},
+	{
 		"nvim-lua/plenary.nvim",
 	},
 	{
