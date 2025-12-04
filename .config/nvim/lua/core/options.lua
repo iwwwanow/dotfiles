@@ -35,3 +35,8 @@ opt.completeopt = "menuone,noselect" -- Автодополнение (встро
 -- spellcheck
 -- opt.spell = true
 opt.spelllang = "en_us,ru"
+
+-- windows specific
+vim.opt.updatetime = 500  -- Увеличьте для WSL
+vim.opt.timeoutlen = 500
+vim.opt.ttimeoutlen = 100

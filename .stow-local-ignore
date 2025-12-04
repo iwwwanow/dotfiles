@@ -1,5 +1,8 @@
 cron
 docs
+scripts
+packages
+.stow-global-ignore
 .stowrc
 .gitignore
 .git
