@@ -1,4 +1,5 @@
-- https://github.com/pmizio/typescript-tools.nvim
+- nvim tstools
+  - https://github.com/pmizio/typescript-tools.nvim
 
 - добавить в стартовый скрипт установка oh-my-zsh
 
