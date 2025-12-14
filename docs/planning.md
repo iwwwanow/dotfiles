@@ -1,4 +1,6 @@
-- установка oh-my-zsh
+- https://github.com/pmizio/typescript-tools.nvim
+
+- добавить в стартовый скрипт установка oh-my-zsh
 
 ```
 # Клонируем недостающие плагины в директорию Oh My Zsh
