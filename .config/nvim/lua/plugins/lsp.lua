@@ -23,6 +23,25 @@ function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
+	lsp_config.tsserver.setup({
+  on_attach = function(client, bufnr)
+    -- Разрешить переопределение definition handler
+    vim.lsp.handlers["textDocument/definition"] = function(_, result, _, _)
+      if not result or vim.tbl_isempty(result) then
+        print("No definition found")
+        return
+      end
+      
+      if #result > 1 then
+        -- Используйте telescope для выбора из нескольких определений
+        require('telescope.builtin').lsp_definitions({})
+      else
+        vim.lsp.util.jump_to_location(result[1], 'utf-8')
+      end
+    end
+  end
+})
+
 	vim.diagnostic.config({
 		virtual_text = {
 			prefix = "●",
