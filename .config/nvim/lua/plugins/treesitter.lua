@@ -25,7 +25,7 @@ vim.g.treesitter_managed_languages = managed_languages
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {},
 	sync_install = false,
-	auto_install = false,
+	auto_install = true,
 	highlight = {
 		enable = false,
 		additional_vim_regex_highlighting = false,
