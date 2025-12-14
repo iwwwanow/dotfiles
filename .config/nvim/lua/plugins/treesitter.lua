@@ -23,13 +23,14 @@ local managed_languages = {
 vim.g.treesitter_managed_languages = managed_languages
 
 require("nvim-treesitter.configs").setup({
-	ensure_installed = {},
+	ensure_installed = managed_languages,
 	sync_install = false,
 	auto_install = true,
 	highlight = {
-		enable = false,
+		enable = true,
 		additional_vim_regex_highlighting = false,
 	},
+	  indent = { enable = true },
 })
 
 local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
