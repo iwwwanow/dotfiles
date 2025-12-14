@@ -17,6 +17,7 @@ local managed_languages = {
 	"jsdoc",
 	"json",
 	"markdown",
+	"bash",
 }
 
 vim.g.treesitter_managed_languages = managed_languages
