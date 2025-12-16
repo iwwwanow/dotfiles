@@ -63,6 +63,7 @@ function M.setup()
 		html = {},
 		cssls = {},
 		jsonls = {},
+		gopls = {},
 		bashls = {},
 		clangd = {},
 		marksman = {},
