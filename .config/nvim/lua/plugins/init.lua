@@ -128,7 +128,7 @@ return {
 				formatters_by_ft = {
 					typescript = { "prettier" },
 					javascript = { "prettier" },
-					        go = { "gofumpt", "goimports-reviser", "golines" },
+					go = { "gofumpt", "goimports-reviser", "golines" },
 					typescriptreact = { "prettier" },
 					javascriptreact = { "prettier" },
 					json = { "prettier" },
