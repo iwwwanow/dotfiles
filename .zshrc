@@ -157,3 +157,11 @@ prompt pure
 
 # Load local settings (not in git)
 if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
+
+# pnpm
+export PNPM_HOME="/home/ubuntu-operator/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
