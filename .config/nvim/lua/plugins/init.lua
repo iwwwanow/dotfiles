@@ -6,11 +6,11 @@ return {
 
 		-- configure and set on startup
 		config = function()
-			vim.g.adwaita_darker = false    -- for darker version
+			vim.g.adwaita_darker = false -- for darker version
 			vim.g.adwaita_disable_cursorline = false -- to disable cursorline
 			vim.g.adwaita_transparent = false -- makes the background transparent
-			vim.cmd('colorscheme adwaita')
-		end
+			vim.cmd("colorscheme adwaita")
+		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
@@ -150,10 +150,4 @@ return {
 	{
 		"nvim-tree/nvim-web-devicons",
 	},
-
-{
-  "3rd/diagram.nvim",
-  dependencies = {
-    { "3rd/image.nvim", opts = {} }, -- you'd probably want to configure image.nvim manually instead of doing this
-  }
 }
