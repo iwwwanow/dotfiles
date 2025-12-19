@@ -149,7 +149,7 @@ return {
 	},
 	{
 		"nvim-tree/nvim-web-devicons",
-	},
+			},
 
 	{
   "3rd/diagram.nvim",
