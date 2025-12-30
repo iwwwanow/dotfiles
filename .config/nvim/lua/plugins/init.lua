@@ -100,6 +100,9 @@ return {
 			{ "mason-org/mason.nvim", opts = {} },
 			"neovim/nvim-lspconfig",
 		},
+		config = function()
+			require("plugins/lsp").setup()
+		end,
 	},
 	-- {
 	-- 	"neovim/nvim-lspconfig",
