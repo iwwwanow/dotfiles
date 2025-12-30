@@ -7,6 +7,8 @@ return {
 			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF0000" })
 
 			vim.cmd("colorscheme monochrome")
+
+			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF0000" }) -- красный
 		end,
 	},
 	-- {
