@@ -63,6 +63,7 @@ function M.setup()
 			{ name = "buffer" },
 			{ name = "path" },
 			{ name = "html-css" },
+			{ name = "css-variables" },
 		},
 		-- sources = cmp.config.sources({
 		-- 	{ name = "nvim_lsp" },
