@@ -67,6 +67,7 @@ function M.setup()
 		-- 	{ name = "buffer" },
 		-- 	{ name = "path" },
 		-- }),
+		matching = { disallow_symbol_nonprefix_matching = false }, -- to use . and / in urls
 		formatting = {
 			format = function(entry, vim_item)
 				local menu_icon = {
