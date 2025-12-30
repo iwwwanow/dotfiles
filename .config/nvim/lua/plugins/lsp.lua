@@ -73,6 +73,13 @@ function M.setup()
 					vim.diagnostic.open_float()
 				end,
 			})
+
+			vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+				buffer = bufnr,
+				callback = function()
+					vim.lsp.buf.clear_references()
+				end,
+			})
 		end
 		vim.lsp.config(server_name, server_opts)
 	end
