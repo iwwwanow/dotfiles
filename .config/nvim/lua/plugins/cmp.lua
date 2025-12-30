@@ -55,15 +55,17 @@ function M.setup()
 			end, { "i", "s" }),
 		}),
 		sources = {
-			{ name = "npm", keyword_length = 4 },
-		},
-		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
-		}, {
-			{ name = "buffer" },
-			{ name = "path" },
-		}),
+			{ name = "npm", keyword_length = 4 },
+		},
+		-- sources = cmp.config.sources({
+		-- 	{ name = "nvim_lsp" },
+		-- 	{ name = "luasnip" },
+		-- }, {
+		-- 	{ name = "buffer" },
+		-- 	{ name = "path" },
+		-- }),
 		formatting = {
 			format = function(entry, vim_item)
 				local menu_icon = {
