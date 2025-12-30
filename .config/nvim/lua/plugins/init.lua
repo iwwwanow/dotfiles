@@ -169,15 +169,4 @@ return {
 			require("plugins.cmp").setup()
 		end,
 	},
-	{
-		dependencies = { "nvim-lua/plenary.nvim" },
-		ft = "json",
-		config = function()
-			require("cmp-npm").setup({
-				sources = {
-					{ name = "npm", keyword_length = 4 },
-				},
-			})
-		end,
-	},
 }
