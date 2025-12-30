@@ -2,6 +2,9 @@ return {
 	{
 		"kdheepak/monochrome.nvim",
 		config = function()
+			vim.o.background = "light"
+			vim.g.monochrome_style = "default"
+
 			vim.cmd("colorscheme monochrome")
 		end,
 	},
