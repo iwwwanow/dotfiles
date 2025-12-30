@@ -23,6 +23,9 @@ function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
+	vim.lsp.util.open_floating_preview({
+		border: single
+	})
 	vim.diagnostic.config({
 		virtual_text = true,
 		virtual_lines = false,
@@ -36,7 +39,7 @@ function M.setup()
 		capabilities = cmp_lsp.default_capabilities(capabilities)
 	end
 
-	local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+	local orig_util_open_floating_preview = 
 	function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
 		opts = opts or {}
 		opts.border = opts.border or "single"
