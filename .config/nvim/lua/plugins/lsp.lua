@@ -26,6 +26,8 @@ function M.setup()
 	vim.diagnostic.config({
 		virtual_text = false,
 		virtual_lines = false,
+		signs = false,
+		float = false,
 	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
