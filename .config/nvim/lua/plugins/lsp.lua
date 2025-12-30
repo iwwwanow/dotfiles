@@ -70,7 +70,7 @@ function M.setup()
 			vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 				buffer = bufnr,
 				callback = function()
-					vim.lsp.buf.hover()
+					vim.diagnostic.open_float()
 				end,
 			})
 		end
