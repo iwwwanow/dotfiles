@@ -24,17 +24,17 @@ function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
 
 	-- vim.diagnostic.config({
-		float = false,
-		-- virtual_text = {
-		-- 	prefix = "●",
-		-- 	severity = {
-		-- 		min = vim.diagnostic.severity.HINT,
-		-- 	},
-		-- },
-		-- float = { border = "single" },
-		-- severity_sort = true,
-		-- underline = true,
-		-- update_in_insert = false,
+	-- float = false,
+	-- virtual_text = {
+	-- 	prefix = "●",
+	-- 	severity = {
+	-- 		min = vim.diagnostic.severity.HINT,
+	-- 	},
+	-- },
+	-- float = { border = "single" },
+	-- severity_sort = true,
+	-- underline = true,
+	-- update_in_insert = false,
 	-- })
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
