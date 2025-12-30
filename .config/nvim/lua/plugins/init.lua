@@ -92,9 +92,10 @@
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		opts = {},
 	},
-{
-    "mason-org/mason-lspconfig.nvim",
-},
+	{
+		"williamboman/mason-lspconfig.nvim",
+		dependencies = { "williamboman/mason.nvim" },
+	},
 	-- {
 	-- 	"neovim/nvim-lspconfig",
 	-- 	event = { "BufReadPre", "BufNewFile" },
