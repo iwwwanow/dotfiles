@@ -1,13 +1,13 @@
 return {
-	{
-		"kdheepak/monochrome.nvim",
-		config = function()
-			vim.o.background = "light"
-			vim.g.monochrome_style = "coolgray"
-			vim.cmd("colorscheme monochrome")
-			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF00FF" }) -- красный
-		end,
-	},
+	-- {
+	-- 	"kdheepak/monochrome.nvim",
+	-- 	config = function()
+	-- 		vim.o.background = "light"
+	-- 		vim.g.monochrome_style = "coolgray"
+	-- 		vim.cmd("colorscheme monochrome")
+	-- 		vim.api.nvim_set_hl(0, "NonText", { fg = "#FF00FF" }) -- красный
+	-- 	end,
+	-- },
 	-- {
 	-- 	"Mofiqul/adwaita.nvim",
 	-- 	lazy = false,
