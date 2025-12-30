@@ -5,7 +5,7 @@ local function lsp_keymaps(bufnr)
 		vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
 	end
 
-	set("n", "D", vim.lsp.buf.hover, "Hover documentation")
+	-- set("n", "D", vim.lsp.buf.hover, "Hover documentation")
 	set("n", "<leader>gd", vim.lsp.buf.definition, "Go to definition")
 	set("n", "<leader>gr", vim.lsp.buf.references, "Go to references")
 	set("n", "<leader>gi", vim.lsp.buf.implementation, "Go to implementation")
