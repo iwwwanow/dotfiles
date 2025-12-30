@@ -17,9 +17,6 @@ require("telescope").setup({
 				["<C-k>"] = actions.move_selection_previous,
 			},
 		},
-		layout_config = {
-			border = "single", -- или 'none', 'single', 'double', 'rounded', 'solid', 'shadow'
-		},
 	},
 	pickers = {
 		find_files = {
