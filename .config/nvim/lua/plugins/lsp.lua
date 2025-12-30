@@ -20,7 +20,6 @@ local function lsp_keymaps(bufnr)
 end
 
 function M.setup()
-	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
 	vim.diagnostic.config({
