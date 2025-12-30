@@ -77,7 +77,7 @@ function M.setup()
 			vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
 				buffer = bufnr,
 				callback = function()
-					vim.diagnostic.reset()
+					vim.diagnostic.hide()
 				end,
 			})
 		end
