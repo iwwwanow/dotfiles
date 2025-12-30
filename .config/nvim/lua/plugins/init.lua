@@ -165,6 +165,7 @@ return {
 			"rafamadriz/friendly-snippets",
 			-- TODO: didnt work
 			"David-Kunz/cmp-npm",
+			-- TODO: test it
 			"Snikimonkd/cmp-go-pkgs",
 		},
 		config = function()
