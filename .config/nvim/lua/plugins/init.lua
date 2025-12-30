@@ -3,7 +3,7 @@ return {
 		"kdheepak/monochrome.nvim",
 		config = function()
 			vim.o.background = "light"
-			vim.g.monochrome_style = "coolgray"
+			vim.g.monochrome_style = "photon"
 
 			vim.cmd("colorscheme monochrome")
 		end,
