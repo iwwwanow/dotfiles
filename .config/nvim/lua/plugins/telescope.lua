@@ -39,4 +39,5 @@ local no_preview = function()
 		prompt_title = false,
 	})
 end
+
 require("telescope.builtin").current_buffer_fuzzy_find(no_preview())
