@@ -27,7 +27,7 @@ function M.setup()
 		virtual_text = true,
 		virtual_lines = true,
 		signs = true,
-		float = false,
+		float = true,
 	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
