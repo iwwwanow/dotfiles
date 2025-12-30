@@ -24,7 +24,7 @@ function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
 
 	vim.diagnostic.config({
-		virtual_text = false,
+		virtual_text = true,
 		virtual_lines = false,
 		signs = true,
 		float = false,
