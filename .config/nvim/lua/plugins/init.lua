@@ -152,6 +152,7 @@ return {
 		ft = { "d2" },
 	},
 
+	-- cmp
 	{
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
