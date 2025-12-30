@@ -125,6 +125,7 @@ function M.setup()
 	-- 	max_width = 40,
 	-- 	focusable = false,
 	-- })
+
 	setup_lsp_highlights()
 end
 
