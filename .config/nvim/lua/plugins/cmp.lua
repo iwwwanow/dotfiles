@@ -62,6 +62,7 @@ function M.setup()
 			{ name = "go_pkgs" },
 			{ name = "buffer" },
 			{ name = "path" },
+			{ name = "html-css" },
 		},
 		-- sources = cmp.config.sources({
 		-- 	{ name = "nvim_lsp" },
