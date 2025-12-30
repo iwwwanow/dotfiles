@@ -17,6 +17,12 @@ require("telescope").setup({
 				["<C-k>"] = actions.move_selection_previous,
 			},
 		},
+		borderchars = {
+			{ "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+			prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
+			results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
+			preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+		},
 	},
 	pickers = {
 		find_files = {
