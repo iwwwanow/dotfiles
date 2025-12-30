@@ -1,5 +1,6 @@
 local M = {}
 
+-- TODO: refactor
 function M.setup()
 	local cmp = require("cmp")
 	local luasnip = require("luasnip")
