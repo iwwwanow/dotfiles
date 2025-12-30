@@ -4,7 +4,7 @@ vim.keymap.set("n", "<Space>ff", builtin_telescope.find_files, {})
 vim.keymap.set(
 	"n",
 	"<Space>fh",
-	"<cmd>:Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=<cr>",
+	"<cmd>:Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=<CR>",
 	{}
 )
 
