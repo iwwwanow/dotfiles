@@ -167,7 +167,7 @@ return {
 			"David-Kunz/cmp-npm",
 			-- TODO: test it
 			"Snikimonkd/cmp-go-pkgs",
-			-- TODO test it: vim.g.css_variables_files = { "variables.css" }
+			-- TODO: test it: vim.g.css_variables_files = { "variables.css" }
 			"roginfarrer/cmp-css-variables",
 		},
 		config = function()
