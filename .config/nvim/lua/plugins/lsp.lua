@@ -91,6 +91,22 @@ function M.setup()
 			setup_server(server_name)
 		end
 	end
+
+	-- Настройка вида hover-окна
+	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+		border = "rounded", -- или "single", "double", "shadow", "none"
+		max_width = 80, -- максимальная ширина
+		max_height = 30, -- максимальная высота
+		focusable = false, -- окно не получает фокус
+		silent = true, -- не создает шума
+	})
+
+	-- Настройка окна подписи (signature help)
+	vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+		border = "rounded",
+		max_width = 80,
+		focusable = false,
+	})
 end
 
 return M
