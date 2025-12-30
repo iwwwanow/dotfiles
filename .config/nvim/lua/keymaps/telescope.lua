@@ -15,6 +15,7 @@ end
 -- require("telescope.builtin").current_buffer_fuzzy_find(no_preview())
 
 local builtin_telescope = require("telescope.builtin")
+
 vim.keymap.set(
 	"n",
 	"<Space>fh",
