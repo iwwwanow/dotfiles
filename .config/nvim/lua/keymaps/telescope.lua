@@ -1,12 +1,12 @@
 local builtin_telescope = require("telescope.builtin")
 
 vim.keymap.set("n", "<Space>ff", builtin_telescope.find_files, {})
-vim.keymap.set(
-	"n",
-	"<Space>fF",
-	"<cmd>:Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=>\\ <CR>",
-	{}
-)
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<Space>fF",
+-- 	"<cmd>:Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=>\\ <CR>",
+-- 	{}
+-- )
 
 vim.keymap.set("n", "<Space>fJ", function()
 	builtin_telescope.find_files({
