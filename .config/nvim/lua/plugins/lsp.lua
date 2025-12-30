@@ -25,22 +25,7 @@ function M.setup()
 
 	vim.diagnostic.config({
 		virtual_text = false, -- Полностью отключаем виртуальный текст
-		underline = false, -- Отключаем подчеркивание
-		signs = true, -- Значки на полях (опционально)
-		update_in_insert = false,
-		severity_sort = true,
-
-		-- Настройки float окна (диагностики при наведении)
-		-- float = {
-		-- 	border = "single",
-		-- 	source = "if_many", -- или "always", "never"
-		-- 	focusable = false,
-		-- 	header = "",
-		-- 	prefix = "",
-		-- },
-
-		-- Отключаем hover диагностики
-		hover = false,
+		virtual_lines = false, -- Полностью отключаем виртуальный текст
 	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
