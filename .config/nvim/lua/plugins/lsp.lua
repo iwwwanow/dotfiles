@@ -25,7 +25,7 @@ function M.setup()
 
 	vim.lsp.util.open_floating_preview(contents, syntax, {
 		border = single,
-	}, ...)
+	})
 
 	vim.diagnostic.config({
 		virtual_text = true,
