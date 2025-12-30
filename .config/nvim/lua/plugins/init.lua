@@ -163,13 +163,13 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"L3MON4D3/LuaSnip",
 			"rafamadriz/friendly-snippets",
+			"David-Kunz/cmp-npm",
 		},
 		config = function()
 			require("plugins.cmp").setup()
 		end,
 	},
 	{
-		"David-Kunz/cmp-npm",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		ft = "json",
 		config = function()
