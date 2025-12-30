@@ -39,6 +39,14 @@ function M.setup()
 		severity_sort = true,
 	})
 
+	vim.lsp.handlers["textDocument/documentHighlight"] = function(_, result, ctx, config)
+		if result and #result > 0 then
+			vim.lsp.buf.document_highlight()
+		else
+			vim.lsp.buf.clear_references()
+		end
+	end
+
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
 	if ok_cmp then
