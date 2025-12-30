@@ -17,6 +17,12 @@ require("telescope").setup({
 				["<C-k>"] = actions.move_selection_previous,
 			},
 		},
+				borderchars = {
+			{ "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+			prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
+			results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
+			preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+
 	},
 	pickers = {
 		find_files = {
@@ -26,18 +32,3 @@ require("telescope").setup({
 	extensions = {},
 })
 
--- local no_preview = function()
--- 	return require("telescope.themes").get_dropdown({
--- 		borderchars = {
--- 			{ "─", "│", "─", "│", "┌", "┐", "┘", "└" },
--- 			prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
--- 			results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
--- 			preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
--- 		},
--- 		width = 0.8,
--- 		previewer = false,
--- 		prompt_title = false,
--- 	})
--- end
---
--- require("telescope.builtin").current_buffer_fuzzy_find(no_preview())
