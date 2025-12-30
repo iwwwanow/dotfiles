@@ -23,7 +23,7 @@ function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
-	vim.diagnostic.config({
+	-- vim.diagnostic.config({
 		float = false,
 		-- virtual_text = {
 		-- 	prefix = "●",
@@ -35,7 +35,7 @@ function M.setup()
 		-- severity_sort = true,
 		-- underline = true,
 		-- update_in_insert = false,
-	})
+	-- })
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
