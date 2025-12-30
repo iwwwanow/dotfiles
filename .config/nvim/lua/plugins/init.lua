@@ -157,7 +157,7 @@ return {
 			require("nvim-web-devicons").setup({
 				color_icons = false,
 			})
-			vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#FF5733" }) -- замените на нужный цвет
+			vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#FF5733" })
 		end,
 	},
 	{
