@@ -11,7 +11,7 @@ vim.keymap.set(
 vim.keymap.set("n", "<Space>fJ", function()
 	builtin_telescope.find_files({
 		additional_args = { "--hidden" },
-		prompt_title = "Grep hidden Files",
+		prompt_title = "Find hidden Files",
 	})
 end, { desc = "Live grep in hidden files" })
 
