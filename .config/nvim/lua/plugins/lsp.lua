@@ -30,6 +30,12 @@ function M.setup()
 		float = true,
 	})
 
+	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+		border = "rounded",
+		max_width = 80,
+		max_height = 30,
+	})
+
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
 	if ok_cmp then
