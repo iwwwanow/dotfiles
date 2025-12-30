@@ -18,7 +18,7 @@ require("telescope").setup({
 			},
 		},
 		layout_config = {
-			border = "solid", -- или 'none', 'single', 'double', 'rounded', 'solid', 'shadow'
+			border = "single", -- или 'none', 'single', 'double', 'rounded', 'solid', 'shadow'
 		},
 	},
 	pickers = {
