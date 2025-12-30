@@ -1,3 +1,4 @@
+- [ ] cmp очень сильный плагин
 - nvim tstools
   - https://github.com/pmizio/typescript-tools.nvim
 
