@@ -23,19 +23,25 @@ function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
-	-- vim.diagnostic.config({
-	-- float = false,
-	-- virtual_text = {
-	-- 	prefix = "●",
-	-- 	severity = {
-	-- 		min = vim.diagnostic.severity.HINT,
-	-- 	},
-	-- },
-	-- float = { border = "single" },
-	-- severity_sort = true,
-	-- underline = true,
-	-- update_in_insert = false,
-	-- })
+	vim.diagnostic.config({
+		virtual_text = false, -- Полностью отключаем виртуальный текст
+		underline = false, -- Отключаем подчеркивание
+		signs = true, -- Значки на полях (опционально)
+		update_in_insert = false,
+		severity_sort = true,
+
+		-- Настройки float окна (диагностики при наведении)
+		float = {
+			border = "single",
+			source = "if_many", -- или "always", "never"
+			focusable = false,
+			header = "",
+			prefix = "",
+		},
+
+		-- Отключаем hover диагностики
+		hover = false,
+	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
