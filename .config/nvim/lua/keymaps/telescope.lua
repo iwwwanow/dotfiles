@@ -8,7 +8,7 @@ vim.keymap.set("n", "<Space>ff", builtin_telescope.find_files, {})
 -- 	{}
 -- )
 
-vim.keymap.set("n", "<Space>fJ", function()
+vim.keymap.set("n", "<Space>fF", function()
 	builtin_telescope.find_files({
 		additional_args = { "--hidden" },
 		prompt_title = "Find hidden Files",
