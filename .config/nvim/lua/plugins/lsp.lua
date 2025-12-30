@@ -94,7 +94,7 @@ function M.setup()
 
 	-- Настройка вида hover-окна
 	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-		border = "rounded", -- или "single", "double", "shadow", "none"
+		border = "shadow", -- или "single", "double", "shadow", "none"
 		max_width = 80, -- максимальная ширина
 		max_height = 30, -- максимальная высота
 		focusable = false, -- окно не получает фокус
