@@ -31,13 +31,13 @@ function M.setup()
 		severity_sort = true,
 
 		-- Настройки float окна (диагностики при наведении)
-		float = {
-			border = "single",
-			source = "if_many", -- или "always", "never"
-			focusable = false,
-			header = "",
-			prefix = "",
-		},
+		-- float = {
+		-- 	border = "single",
+		-- 	source = "if_many", -- или "always", "never"
+		-- 	focusable = false,
+		-- 	header = "",
+		-- 	prefix = "",
+		-- },
 
 		-- Отключаем hover диагностики
 		hover = false,
