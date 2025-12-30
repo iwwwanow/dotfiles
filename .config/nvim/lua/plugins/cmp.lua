@@ -65,6 +65,7 @@ function M.setup()
 			{ name = "html-css" },
 			{ name = "css-variables" },
 			{ name = "treesitter" },
+			{ name = "sql" },
 		},
 		-- sources = cmp.config.sources({
 		-- 	{ name = "nvim_lsp" },
