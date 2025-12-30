@@ -104,7 +104,7 @@ function M.setup()
 	-- Настройка окна подписи (signature help)
 	vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 		border = "rounded",
-		max_width = 80,
+		max_width = 40,
 		focusable = false,
 	})
 end
