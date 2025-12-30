@@ -167,6 +167,7 @@ return {
 			"David-Kunz/cmp-npm",
 			-- TODO: test it
 			"Snikimonkd/cmp-go-pkgs",
+			"roginfarrer/cmp-css-variables",
 		},
 		config = function()
 			require("plugins.cmp").setup()
