@@ -7,7 +7,9 @@ function M.setup()
 	local cmpnpm = require("cmp-npm")
 
 	luasnip.config.setup({})
-	cmpnpm.config.setup({})
+	cmpnpm.config.setup({ sources = {
+		{ name = "npm", keyword_length = 4 },
+	} })
 
 	local ok_loader, vscode_loader = pcall(require, "luasnip.loaders.from_vscode")
 	if ok_loader then
