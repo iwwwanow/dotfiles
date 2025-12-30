@@ -157,7 +157,9 @@ return {
 			require("nvim-web-devicons").setup({
 				color_icons = false,
 			})
-			vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#FF5733", bg = "#FF5733" })
+			vim.schedule(function()
+				vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#FF5733", bg = "#FF5733" })
+			end)
 		end,
 	},
 	{
