@@ -58,6 +58,7 @@ function M.setup()
 			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
 			{ name = "npm", keyword_length = 4 },
+			{ name = "go_pkgs" },
 		},
 		-- sources = cmp.config.sources({
 		-- 	{ name = "nvim_lsp" },
