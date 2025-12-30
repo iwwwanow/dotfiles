@@ -163,6 +163,7 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"L3MON4D3/LuaSnip",
 			"rafamadriz/friendly-snippets",
+			-- TODO: didnt work
 			"David-Kunz/cmp-npm",
 		},
 		config = function()
