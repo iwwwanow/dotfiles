@@ -1,4 +1,3 @@
-return {
 	{
 		"Mofiqul/adwaita.nvim",
 		lazy = false,
@@ -95,7 +94,10 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-		dependencies = { "williamboman/mason.nvim" },
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
+    },
 	},
 	-- {
 	-- 	"neovim/nvim-lspconfig",
