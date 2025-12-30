@@ -64,6 +64,7 @@ function M.setup()
 			{ name = "path" },
 			{ name = "html-css" },
 			{ name = "css-variables" },
+			{ name = "treesitter" },
 		},
 		-- sources = cmp.config.sources({
 		-- 	{ name = "nvim_lsp" },
