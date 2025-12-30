@@ -19,6 +19,23 @@ local function lsp_keymaps(bufnr)
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
 end
 
+local function setup_lsp_highlights()
+	-- Подсветка текста при ссылках LSP
+	vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "#3a3a3a", underline = true })
+	vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#2d2d4a" })
+	vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "#4a2d2d" })
+	vim.api.nvim_set_hl(0, "LspReferenceTarget", { bg = "#2d4a2d" })
+
+	-- Другие LSP подсветки
+	vim.api.nvim_set_hl(0, "DiagnosticError", { fg = "#f38ba8" })
+	vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = "#fab387" })
+	vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = "#89b4fa" })
+	vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = "#a6e3a1" })
+
+	-- Подсветка текущего символа при hover
+	vim.api.nvim_set_hl(0, "LspSignatureActiveParameter", { bg = "#45475a", bold = true })
+end
+
 function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
