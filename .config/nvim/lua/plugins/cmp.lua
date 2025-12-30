@@ -3,6 +3,7 @@ local M = {}
 function M.setup()
 	local cmp = require("cmp")
 	local luasnip = require("luasnip")
+	local cmpnpm = require("cmp-npm")
 
 	luasnip.config.setup({})
 
