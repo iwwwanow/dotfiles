@@ -74,10 +74,6 @@ function M.setup()
 		experimental = {
 			ghost_text = false,
 		},
-		-- window = {
-		--   completion = cmp.config.window.bordered(),
-		--   documentation = cmp.config.window.bordered(),
-		-- },
 	})
 
 	local ok, cmp_autopairs = pcall(require, "nvim-autopairs.completion.cmp")
