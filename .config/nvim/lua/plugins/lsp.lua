@@ -30,10 +30,13 @@ function M.setup()
 		float = true,
 	})
 
-	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-		border = "rounded",
-		max_width = 80,
-		max_height = 30,
+	vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+		virtual_text = true,
+		virtual_lines = false,
+		signs = true,
+		underline = true,
+		update_in_insert = false,
+		severity_sort = true,
 	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
