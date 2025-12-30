@@ -26,7 +26,7 @@ function M.setup()
 	vim.diagnostic.config({
 		virtual_text = true,
 		virtual_lines = true,
-		signs = false,
+		signs = true,
 		float = false,
 	})
 
