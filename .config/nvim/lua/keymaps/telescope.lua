@@ -1,3 +1,19 @@
+local no_preview = function()
+	return require("telescope.themes").get_dropdown({
+		borderchars = {
+			{ "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+			prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
+			results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
+			preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+		},
+		width = 0.8,
+		previewer = false,
+		prompt_title = false,
+	})
+end
+--
+-- require("telescope.builtin").current_buffer_fuzzy_find(no_preview())
+
 local builtin_telescope = require("telescope.builtin")
 vim.keymap.set(
 	"n",
