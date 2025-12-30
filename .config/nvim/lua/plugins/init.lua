@@ -1,3 +1,4 @@
+return {
 	{
 		"Mofiqul/adwaita.nvim",
 		lazy = false,
@@ -92,7 +93,7 @@
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		opts = {},
 	},
-			{
+	{
 		"williamboman/mason-lspconfig.nvim",
 		dependencies = { "williamboman/mason.nvim" },
 	},
@@ -149,6 +150,7 @@
 	{
 		"nvim-tree/nvim-web-devicons",
 	},
+
 	{
 		"terrastruct/d2-vim",
 		ft = { "d2" },
