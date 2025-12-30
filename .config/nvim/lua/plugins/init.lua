@@ -3,7 +3,7 @@ return {
 		"kdheepak/monochrome.nvim",
 		config = function()
 			vim.o.background = "light"
-			vim.g.monochrome_style = "default"
+			vim.g.monochrome_style = "subtle"
 
 			vim.cmd("colorscheme monochrome")
 		end,
