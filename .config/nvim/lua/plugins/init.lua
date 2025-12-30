@@ -149,7 +149,6 @@
 	{
 		"nvim-tree/nvim-web-devicons",
 	},
-
 	{
 		"terrastruct/d2-vim",
 		ft = { "d2" },
