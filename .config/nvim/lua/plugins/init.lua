@@ -4,6 +4,7 @@ return {
 		config = function()
 			vim.o.background = "light"
 			vim.g.monochrome_style = "coolgray"
+			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF0000" })
 
 			vim.cmd("colorscheme monochrome")
 		end,
