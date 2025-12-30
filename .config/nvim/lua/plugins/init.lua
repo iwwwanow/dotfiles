@@ -169,6 +169,7 @@ return {
 			"Snikimonkd/cmp-go-pkgs",
 			-- TODO: test it: vim.g.css_variables_files = { "variables.css" }
 			"roginfarrer/cmp-css-variables",
+			"kristijanhusak/vim-dadbod-completion",
 		},
 		config = function()
 			require("plugins.cmp").setup()
