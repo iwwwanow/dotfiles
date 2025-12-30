@@ -23,7 +23,7 @@ function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
-	vim.lsp.util.open_floating_preview(contents, syntax, {
+	vim.lsp.util.open_floating_preview({
 		border = single,
 	})
 
