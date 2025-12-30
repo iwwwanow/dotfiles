@@ -15,7 +15,7 @@ local function lsp_keymaps(bufnr)
 	set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "Code action")
 	set("n", "[g", vim.diagnostic.goto_prev, "Previous diagnostic")
 	set("n", "]g", vim.diagnostic.goto_next, "Next diagnostic")
-	-- set("n", "<leader>D", vim.lsp.buf.hover, "Hover documentation")
+	set("n", "<leader>D", vim.lsp.buf.hover, "Hover documentation")
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
 end
 
