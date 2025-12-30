@@ -24,8 +24,8 @@ function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
 
 	vim.diagnostic.config({
-		virtual_text = false, -- Полностью отключаем виртуальный текст
-		virtual_lines = false, -- Полностью отключаем виртуальный текст
+		virtual_text = false,
+		virtual_lines = false,
 	})
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
