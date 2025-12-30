@@ -57,7 +57,6 @@ function M.setup()
 		sources = {
 			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
-			-- TODO: didnt work
 			{ name = "npm", keyword_length = 4 },
 		},
 		-- sources = cmp.config.sources({
