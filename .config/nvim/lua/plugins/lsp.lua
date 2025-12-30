@@ -81,7 +81,7 @@ function M.setup()
 			lsp_keymaps(bufnr)
 		end
 		-- lspconfig[server_name].setup(server_opts)
-		vim.lsp.config([server_name], server_opts)
+		vim.lsp.config(server_name, server_opts)
 	end
 
 	if mason_lspconfig.setup_handlers then
