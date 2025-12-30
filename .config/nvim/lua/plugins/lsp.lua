@@ -20,6 +20,7 @@ local function lsp_keymaps(bufnr)
 end
 
 function M.setup()
+	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
 	vim.diagnostic.config({
@@ -79,7 +80,8 @@ function M.setup()
 		server_opts.on_attach = function(_, bufnr)
 			lsp_keymaps(bufnr)
 		end
-		lspconfig[server_name].setup(server_opts)
+		-- lspconfig[server_name].setup(server_opts)
+		vim.lsp.config([server_name], server_opts)
 	end
 
 	if mason_lspconfig.setup_handlers then
