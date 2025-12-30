@@ -6,7 +6,6 @@ vim.keymap.set(
 	"<cmd>:Telescope find_files find_command=rg,--ignore,--hidden,--files prompt_prefix=🔍<cr>",
 	{}
 )
-vim.keymap.set("n", "<Space>fg", builtin_telescope.live_grep, {})
 vim.keymap.set("n", "<Space>fG", function()
 	builtin_telescope.live_grep({
 		additional_args = { "--hidden" },
@@ -14,5 +13,6 @@ vim.keymap.set("n", "<Space>fG", function()
 	})
 end, { desc = "Live grep in hidden files" })
 
+vim.keymap.set("n", "<Space>fg", builtin_telescope.live_grep, {})
 vim.keymap.set("n", "<Space>fb", builtin_telescope.buffers, {})
 -- vim.keymap.set("n", "<Space>fh", builtin_telescope.help_tags, {})
