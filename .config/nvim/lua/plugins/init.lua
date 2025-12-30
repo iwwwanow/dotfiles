@@ -92,7 +92,7 @@
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		opts = {},
 	},
-	-- {
+			-- {
 	-- 	"neovim/nvim-lspconfig",
 	-- 	event = { "BufReadPre", "BufNewFile" },
 	-- 	dependencies = {
