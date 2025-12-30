@@ -115,10 +115,10 @@ function M.setup()
 	-- 	focusable = false,
 	-- })
 
-	vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "#3a3a3a", underline = true })
-	vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#2d2d4a" })
-	vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "#4a2d2d" })
-	vim.api.nvim_set_hl(0, "LspReferenceTarget", { bg = "#2d4a2d" })
+	-- vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "#3a3a3a", underline = true })
+	-- vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#2d2d4a" })
+	-- vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "#4a2d2d" })
+	-- vim.api.nvim_set_hl(0, "LspReferenceTarget", { bg = "#2d4a2d" })
 end
 
 return M
