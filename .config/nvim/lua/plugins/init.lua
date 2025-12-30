@@ -155,7 +155,7 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		config = function()
 			require("nvim-web-devicons").setup({
-				color_icons = false,
+				color_icons = true,
 			})
 			vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#FF5733", bg = "#FF5733" })
 		end,
