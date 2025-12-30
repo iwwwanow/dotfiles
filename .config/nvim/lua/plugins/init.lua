@@ -5,7 +5,7 @@ return {
 			vim.o.background = "light"
 			vim.g.monochrome_style = "coolgray"
 			vim.cmd("colorscheme monochrome")
-			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF0000" }) -- красный
+			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF00FF" }) -- красный
 		end,
 	},
 	-- {
