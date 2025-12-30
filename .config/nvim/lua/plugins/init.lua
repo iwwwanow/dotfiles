@@ -158,7 +158,7 @@ return {
 				color_icons = false,
 			})
 			vim.schedule(function()
-				vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#0000FF" })
+				vim.api.nvim_set_hl(0, "DevIconDefault", { fg = "#00FF00" })
 			end)
 		end,
 	},
