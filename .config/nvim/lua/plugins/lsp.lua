@@ -2,7 +2,7 @@ local M = {}
 
 local function lsp_keymaps(bufnr)
 	local set = function(mode, lhs, rhs, desc)
-		vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
+		vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc, remap = false })
 	end
 
 	-- set("n", "D", vim.lsp.buf.hover, "Hover documentation")
