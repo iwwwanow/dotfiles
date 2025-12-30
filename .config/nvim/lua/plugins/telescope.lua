@@ -21,6 +21,12 @@ require("telescope").setup({
 	pickers = {
 		find_files = {
 			theme = "dropdown",
+			borderchars = {
+				{ "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+				prompt = { "─", "│", " ", "│", "┌", "┐", "│", "│" },
+				results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
+				preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+			},
 		},
 	},
 	extensions = {},
