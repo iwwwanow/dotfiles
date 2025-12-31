@@ -10,8 +10,8 @@ local lsp_keymaps = require("keymaps.lsp")
 
 function M.setup()
 	vim.diagnostic.config(diagnostic)
-	capabilities.setup()
-	mason_lspconfig.setup(servers, util, capabilities, lsp_keymaps)
+	local client_capabilities = capabilities.setup()
+	mason_lspconfig.setup(servers, util, client_capabilities, lsp_keymaps)
 end
 
 return M
