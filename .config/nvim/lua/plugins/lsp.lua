@@ -43,7 +43,6 @@ function M.toggle_diagnostics_on_hover(bufnr)
 end
 
 function M.setup()
-	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
 
 	vim.diagnostic.config({
