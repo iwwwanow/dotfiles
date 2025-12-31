@@ -27,6 +27,10 @@ end
 function M.toggle_diagnostics_on_hover(bufnr)
 	if diagnostics_enabled then
 		-- Выключаем
+		if diagnostics_augroup then
+			vim.api.nvim_del_augroup_by_id(diagnostics_augroup)
+			diagnostics_augroup = nil
+		end
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
