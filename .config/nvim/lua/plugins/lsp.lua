@@ -36,7 +36,9 @@ function M.toggle_diagnostics_on_hover(bufnr)
 	vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 		buffer = bufnr,
 		callback = function()
-			vim.diagnostic.open_float()
+			if diagnostics_enabled then
+				vim.diagnostic.open_float()
+			end
 		end,
 	})
 end
