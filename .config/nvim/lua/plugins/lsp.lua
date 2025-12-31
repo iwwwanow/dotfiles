@@ -20,6 +20,47 @@ local function lsp_keymaps(bufnr)
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
 end
 
+function M.toggle_diagnostics_on_hover()
+	if diagnostics_enabled then
+		-- Выключаем
+		if diagnostics_augroup then
+			vim.api.nvim_del_augroup_by_id(diagnostics_augroup)
+			diagnostics_augroup = nil
+		end
+		diagnostics_enabled = false
+		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
+	else
+		-- Включаем
+		diagnostics_augroup = vim.api.nvim_create_augroup("DiagnosticsOnHover", { clear = true })
+
+		-- Автокоманда для показа диагностики при наведении
+		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+			group = diagnostics_augroup,
+			callback = function()
+				local diagnostics = vim.diagnostic.get(0, { lnum = vim.api.nvim_win_get_cursor(0)[1] - 1 })
+				if #diagnostics > 0 then
+					vim.diagnostic.open_float({
+						border = "rounded",
+						focusable = false,
+						scope = "line",
+					})
+				end
+			end,
+		})
+
+		-- Автокоманда для скрытия диагностики при движении курсора
+		vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+			group = diagnostics_augroup,
+			callback = function()
+				vim.diagnostic.hide()
+			end,
+		})
+
+		diagnostics_enabled = true
+		vim.notify("Diagnostics on hover: ON", vim.log.levels.INFO)
+	end
+end
+
 function M.setup()
 	local lspconfig = require("lspconfig")
 	local mason_lspconfig = require("mason-lspconfig")
