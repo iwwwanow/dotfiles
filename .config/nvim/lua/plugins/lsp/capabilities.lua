@@ -6,6 +6,7 @@ function M.setup()
 	if ok_cmp then
 		capabilities = cmp_lsp.default_capabilities(capabilities)
 	end
+	return capabilities
 end
 
 return M
