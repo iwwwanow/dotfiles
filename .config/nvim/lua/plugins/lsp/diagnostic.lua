@@ -6,7 +6,9 @@ M = {
 	signs = true,
 	-- float = true,
 	float = {
+		focusable = false
 		border = "square",
+		style = "minimal"
 	},
 }
 
