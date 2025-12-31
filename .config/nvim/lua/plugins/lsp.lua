@@ -74,7 +74,7 @@ function M.setup()
 					vim.diagnostic.open_float()
 				end,
 			})
-			--
+
 			-- vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
 			-- 	buffer = bufnr,
 			-- 	callback = function()
