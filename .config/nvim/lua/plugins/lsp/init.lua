@@ -89,7 +89,7 @@ function M.setup()
 		local server_opts = servers[server_name] or {}
 		server_opts.capabilities = capabilities
 		server_opts.on_attach = function(_, bufnr)
-			lsp_keymaps.setup(bufnr)
+			lsp_keymaps(bufnr)
 		end
 		vim.lsp.config(server_name, server_opts)
 	end
