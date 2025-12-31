@@ -1,6 +1,6 @@
 local M = {}
 
-M.config = {
+M = {
 	virtual_text = false,
 	virtual_lines = false,
 	signs = true,
