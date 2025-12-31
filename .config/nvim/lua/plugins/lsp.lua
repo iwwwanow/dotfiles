@@ -26,29 +26,10 @@ function M.toggle_diagnostics_on_hover()
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
-		-- Включаем
-		diagnostics_augroup = vim.api.nvim_create_augroup("DiagnosticsOnHover", { clear = true })
-
-		-- Автокоманда для показа диагностики при наведении
 		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-			group = diagnostics_augroup,
+			buffer = bufnr,
 			callback = function()
-				local diagnostics = vim.diagnostic.get(0, { lnum = vim.api.nvim_win_get_cursor(0)[1] - 1 })
-				if #diagnostics > 0 then
-					vim.diagnostic.open_float({
-						border = "rounded",
-						focusable = false,
-						scope = "line",
-					})
-				end
-			end,
-		})
-
-		-- Автокоманда для скрытия диагностики при движении курсора
-		vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-			group = diagnostics_augroup,
-			callback = function()
-				vim.diagnostic.hide()
+				vim.diagnostic.open_float()
 			end,
 		})
 
