@@ -1,6 +1,6 @@
 local M = {}
 
--- local lsp_keymaps = require("keymaps/lsp")
+local diagnostics_enabled = false
 
 -- TODO: refactor
 local function lsp_keymaps(bufnr)
@@ -22,8 +22,6 @@ local function lsp_keymaps(bufnr)
 	set("n", "<leader>K", vim.lsp.buf.hover, "Hover documentation")
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
 end
-
-local diagnostics_enabled = false
 
 function M.toggle_diagnostics_on_hover(bufnr)
 	if diagnostics_enabled then
