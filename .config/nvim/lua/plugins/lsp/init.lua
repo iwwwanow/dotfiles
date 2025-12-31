@@ -3,6 +3,7 @@ local M = {}
 local lsp_keymaps = require("keymaps.lsp")
 local servers = require("plugins.lsp.servers")
 local diagnostic = require("plugins.lsp.diagnostic")
+local util = require("plugins.lsp.util")
 
 function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
