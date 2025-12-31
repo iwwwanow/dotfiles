@@ -1,13 +1,12 @@
 local M = {}
 
+local mason_lspconfig = require("mason-lspconfig")
 local lsp_keymaps = require("keymaps.lsp")
 local servers = require("plugins.lsp.servers")
 local diagnostic = require("plugins.lsp.diagnostic")
 local util = require("plugins.lsp.util")
 
 function M.setup()
-	local mason_lspconfig = require("mason-lspconfig")
-
 	vim.diagnostic.config(diagnostic)
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
