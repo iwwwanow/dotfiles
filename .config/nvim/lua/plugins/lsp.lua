@@ -34,6 +34,8 @@ function M.toggle_diagnostics_on_hover(bufnr)
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
+		diagnostics_augroup = vim.api.nvim_create_augroup("DiagnosticsOnHover", { clear = true })
+
 		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 			buffer = bufnr,
 			callback = function()
