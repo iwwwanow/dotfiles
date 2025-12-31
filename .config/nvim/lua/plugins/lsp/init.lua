@@ -9,8 +9,8 @@ local util = require("plugins.lsp.util")
 
 function M.setup()
 	vim.diagnostic.config(diagnostic)
-	mason_lspconfig.setup(servers, util, capabilities, lsp_keymaps)
 	capabilities.setup()
+	mason_lspconfig.setup(servers, util, capabilities, lsp_keymaps)
 end
 
 return M
