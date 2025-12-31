@@ -1,6 +1,6 @@
 local M = {}
 
-M.diagnostic = {
+M.diagnostic.config = {
 	virtual_text = false,
 	virtual_lines = false,
 	signs = true,
