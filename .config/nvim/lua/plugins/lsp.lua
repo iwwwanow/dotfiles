@@ -89,20 +89,6 @@ function M.setup()
 		server_opts.capabilities = capabilities
 		server_opts.on_attach = function(_, bufnr)
 			lsp_keymaps(bufnr)
-
-			-- vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-			-- 	buffer = bufnr,
-			-- 	callback = function()
-			-- 		vim.diagnostic.open_float()
-			-- 	end,
-			-- })
-
-			-- vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-			-- 	buffer = bufnr,
-			-- 	callback = function()
-			-- 		vim.diagnostic.hide()
-			-- 	end,
-			-- })
 		end
 		vim.lsp.config(server_name, server_opts)
 	end
