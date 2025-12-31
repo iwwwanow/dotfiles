@@ -1,5 +1,7 @@
 local M = {}
 
+local diagnostics_enabled = false
+
 -- TODO: refactor
 local function lsp_keymaps(bufnr)
 	local set = function(mode, lhs, rhs, desc)
