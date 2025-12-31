@@ -1,6 +1,7 @@
 local M = {}
 
 local diagnostics_enabled = false
+local diagnostics_augroup = nil
 
 -- TODO: refactor
 local function lsp_keymaps(bufnr)
