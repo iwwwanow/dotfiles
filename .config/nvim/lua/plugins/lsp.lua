@@ -29,12 +29,12 @@ function M.toggle_diagnostics_on_hover(bufnr)
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
-		-- vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-		-- 	buffer = bufnr,
-		-- 	callback = function()
-		-- 		vim.diagnostic.open_float()
-		-- 	end,
-		-- })
+		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+			buffer = bufnr,
+			callback = function()
+				vim.diagnostic.open_float()
+			end,
+		})
 
 		diagnostics_enabled = true
 		vim.notify("Diagnostics on hover: ON", vim.log.levels.INFO)
@@ -89,12 +89,12 @@ function M.setup()
 		server_opts.on_attach = function(_, bufnr)
 			lsp_keymaps(bufnr)
 
-			vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-				buffer = bufnr,
-				callback = function()
-					vim.diagnostic.open_float()
-				end,
-			})
+			-- vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+			-- 	buffer = bufnr,
+			-- 	callback = function()
+			-- 		vim.diagnostic.open_float()
+			-- 	end,
+			-- })
 
 			-- vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
 			-- 	buffer = bufnr,
