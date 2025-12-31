@@ -6,7 +6,7 @@ local diagnostic = require("plugins.lsp.diagnostic")
 function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
 
-	vim.diagnostic.config(diagnostic)
+	vim.diagnostic.config(diagnostic.config)
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
