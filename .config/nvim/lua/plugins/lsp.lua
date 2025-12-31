@@ -20,21 +20,23 @@ local function lsp_keymaps(bufnr)
 	set("n", "<leader>cl", vim.lsp.codelens.run, "Code lens action")
 end
 
-function M.toggle_diagnostics_on_hover()
+function M.toggle_diagnostics_on_hover(bufnr)
 	if diagnostics_enabled then
 		-- Выключаем
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
-		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-			buffer = bufnr,
-			callback = function()
-				vim.diagnostic.open_float()
-			end,
-		})
+		if bufnr then
+			vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+				buffer = bufnr,
+				callback = function()
+					vim.diagnostic.open_float()
+				end,
+			})
 
-		diagnostics_enabled = true
-		vim.notify("Diagnostics on hover: ON", vim.log.levels.INFO)
+			diagnostics_enabled = true
+			vim.notify("Diagnostics on hover: ON", vim.log.levels.INFO)
+		end
 	end
 end
 
