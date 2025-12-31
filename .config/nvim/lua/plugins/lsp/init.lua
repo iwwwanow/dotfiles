@@ -1,6 +1,6 @@
 local M = {}
 
-local mason_lspconfig = require("mason-lspconfig")
+local mason_lspconfig = require("plugins.lsp.mason-lspconfig")
 local lsp_keymaps = require("keymaps.lsp")
 local servers = require("plugins.lsp.servers")
 local diagnostic = require("plugins.lsp.diagnostic")
@@ -14,6 +14,8 @@ function M.setup()
 	if ok_cmp then
 		capabilities = cmp_lsp.default_capabilities(capabilities)
 	end
+
+	mason_lspconfig.setup(servers, util, capabilities, lsp_keymaps)
 end
 
 return M
