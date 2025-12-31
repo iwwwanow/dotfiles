@@ -1,16 +1,12 @@
 local M = {}
 
 local lsp_keymaps = require("keymaps.lsp")
+local diagnostic = require("plugins.lsp.diagnostic")
 
 function M.setup()
 	local mason_lspconfig = require("mason-lspconfig")
 
-	vim.diagnostic.config({
-		virtual_text = false,
-		virtual_lines = false,
-		signs = true,
-		float = true,
-	})
+	vim.diagnostic.config(diagnostic)
 
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	local ok_cmp, cmp_lsp = pcall(require, "cmp_nvim_lsp")
