@@ -20,15 +20,6 @@ function M.setup()
 		automatic_installation = true,
 	})
 
-	local function setup_server(server_name)
-		local server_opts = servers[server_name] or {}
-		server_opts.capabilities = capabilities
-		server_opts.on_attach = function(_, bufnr)
-			lsp_keymaps.setup(bufnr)
-		end
-		vim.lsp.config(server_name, server_opts)
-	end
-
 	if mason_lspconfig.setup_handlers then
 		mason_lspconfig.setup_handlers({ setup_server })
 	else
