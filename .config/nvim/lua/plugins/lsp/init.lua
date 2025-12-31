@@ -1,5 +1,7 @@
 local M = {}
 
+local lsp_keymaps = require("keymaps/lsp")
+
 local diagnostics_enabled = false
 
 -- TODO: refactor
