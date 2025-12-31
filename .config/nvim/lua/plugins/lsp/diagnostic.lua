@@ -8,7 +8,7 @@ M = {
 	float = {
 		focusable = false,
 		-- border = "square",
-		style = "minimal",
+		-- style = "minimal",
 	},
 }
 
