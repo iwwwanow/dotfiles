@@ -1,6 +1,7 @@
 local M = {}
 
 local lsp_keymaps = require("keymaps.lsp")
+local servers = require("plugins.lsp.servers")
 local diagnostic = require("plugins.lsp.diagnostic")
 
 function M.setup()
@@ -13,26 +14,6 @@ function M.setup()
 	if ok_cmp then
 		capabilities = cmp_lsp.default_capabilities(capabilities)
 	end
-
-	local servers = {
-		lua_ls = {
-			settings = {
-				Lua = {
-					diagnostics = { globals = { "vim" } },
-					workspace = { checkThirdParty = false },
-				},
-			},
-		},
-		ts_ls = {},
-		svelte = {},
-		html = {},
-		cssls = {},
-		jsonls = {},
-		gopls = {},
-		bashls = {},
-		clangd = {},
-		marksman = {},
-	}
 
 	mason_lspconfig.setup({
 		ensure_installed = vim.tbl_keys(servers),
