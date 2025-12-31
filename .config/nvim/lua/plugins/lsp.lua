@@ -26,26 +26,19 @@ end
 
 function M.toggle_diagnostics_on_hover(bufnr)
 	if diagnostics_enabled then
-		-- Выключаем
-		if diagnostics_augroup then
-			vim.api.nvim_del_augroup_by_id(diagnostics_augroup)
-			diagnostics_augroup = nil
-		end
 		diagnostics_enabled = false
 		vim.notify("Diagnostics on hover: OFF", vim.log.levels.INFO)
 	else
-		diagnostics_augroup = vim.api.nvim_create_augroup("DiagnosticsOnHover", { clear = true })
-
-		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-			buffer = bufnr,
-			callback = function()
-				vim.diagnostic.open_float()
-			end,
-		})
-
 		diagnostics_enabled = true
 		vim.notify("Diagnostics on hover: ON", vim.log.levels.INFO)
 	end
+
+	vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+		buffer = bufnr,
+		callback = function()
+			vim.diagnostic.open_float()
+		end,
+	})
 end
 
 function M.setup()
