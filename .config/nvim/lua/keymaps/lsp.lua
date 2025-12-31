@@ -1,6 +1,6 @@
 local M = {}
 
-local function lsp_keymaps(bufnr)
+function M.lsp_keymaps(bufnr)
 	local set = function(mode, lhs, rhs, desc)
 		vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc, remap = false })
 	end
