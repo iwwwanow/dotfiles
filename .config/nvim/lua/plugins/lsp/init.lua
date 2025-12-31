@@ -94,13 +94,13 @@ function M.setup()
 		vim.lsp.config(server_name, server_opts)
 	end
 
-	-- if mason_lspconfig.setup_handlers then
-	-- 	mason_lspconfig.setup_handlers({ setup_server })
-	-- else
-	-- 	for server_name in pairs(servers) do
-	-- 		setup_server(server_name)
-	-- 	end
-	-- end
+	if mason_lspconfig.setup_handlers then
+		mason_lspconfig.setup_handlers({ setup_server })
+	else
+		for server_name in pairs(servers) do
+			setup_server(server_name)
+		end
+	end
 end
 
 return M
