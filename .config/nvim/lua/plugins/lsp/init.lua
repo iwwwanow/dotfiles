@@ -21,7 +21,7 @@ function M.setup()
 	})
 
 	if mason_lspconfig.setup_handlers then
-		mason_lspconfig.setup_handlers({ setup_server })
+		mason_lspconfig.setup_handlers({ util.setup_server })
 	else
 		for server_name in pairs(servers) do
 			util.setup_server(servers, capabilities, lsp_keymaps, server_name)
