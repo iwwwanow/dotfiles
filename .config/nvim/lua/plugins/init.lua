@@ -8,6 +8,14 @@ return {
 			vim.api.nvim_set_hl(0, "NonText", { fg = "#FF00FF" }) -- красный
 		end,
 	},
+
+{
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+}
+
 	-- {
 	-- 	"Mofiqul/adwaita.nvim",
 	-- 	lazy = false,
