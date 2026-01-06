@@ -137,7 +137,7 @@ return {
 					typescript = { "prettier" },
 					javascript = { "prettier" },
 					go = { "gofumpt", "goimports-reviser", "golines" },
-					tmpl = { "gofumpt", "prettier" },
+					gohtmltmpl = { "prettier" }, -- ИЗМЕНИТЕ ЗДЕСЬ
 					typescriptreact = { "prettier" },
 					javascriptreact = { "prettier" },
 					json = { "prettier" },
