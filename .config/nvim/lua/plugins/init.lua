@@ -213,6 +213,7 @@ return {
 				"blade",
 				"php",
 				"templ",
+				"tmpl",
 				"astro",
 			},
 			handlers = {
