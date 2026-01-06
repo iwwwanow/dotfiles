@@ -125,6 +125,13 @@ return {
 		"stevearc/conform.nvim",
 		event = { "BufReadPre", "BufNewFile" },
 		config = function()
+			vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+				pattern = { "*.tmpl" },
+				callback = function()
+					vim.bo.filetype = "tmpl"
+				end,
+			})
+
 			require("conform").setup({
 				formatters_by_ft = {
 					typescript = { "prettier" },
