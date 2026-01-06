@@ -139,6 +139,7 @@ return {
 					go = { "gofumpt", "goimports-reviser", "golines" },
 					typescriptreact = { "prettier" },
 					javascriptreact = { "prettier" },
+					tmpl = { "prettier" },
 					json = { "prettier" },
 					html = { "prettier" },
 					css = { "prettier" },
