@@ -9,6 +9,8 @@ return {
 		end,
 	},
 
+	{ "ngynkvn/gotmpl.nvim", opts = {} },
+
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
