@@ -128,7 +128,7 @@ return {
 			vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 				pattern = { "*.tmpl" },
 				callback = function()
-					vim.bo.filetype = "tmpl"
+					vim.bo.filetype = "gotmpl"
 				end,
 			})
 
@@ -139,7 +139,7 @@ return {
 					go = { "gofumpt", "goimports-reviser", "golines" },
 					typescriptreact = { "prettier" },
 					javascriptreact = { "prettier" },
-					tmpl = { "prettier" },
+					gotmpl = { "prettier" },
 					json = { "prettier" },
 					html = { "prettier" },
 					css = { "prettier" },
