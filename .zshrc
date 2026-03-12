@@ -30,16 +30,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# java
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
-
-# sdkman (must be last)
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # jetbrains
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"
 [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ] && source "${___MY_VMOPTIONS_SHELL_FILE}"
