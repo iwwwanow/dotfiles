@@ -10,12 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 # PATH
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/Applications/WebStorm-243.23654.157/bin:$PATH
 export PATH=$PATH:$HOME/Applications/zls/zig-out/bin
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:$HOME/.rvm/bin"
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
