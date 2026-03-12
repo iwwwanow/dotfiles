@@ -72,7 +72,24 @@ Download zig from https://ziglang.org/download/ and extract to `~/Applications/z
 
 Download zls from https://github.com/zigtools/zls/releases and build or extract to `~/Applications/zls/zig-out/bin/zls`.
 
-## 7. Neovim
+## 7. Lazygit
+
+### Ubuntu
+```sh
+sudo apt install lazygit
+# или последнюю версию:
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name"' | sed 's/.*"v\(.*\)".*/\1/')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit -D -t /usr/local/bin/
+```
+
+### Arch
+```sh
+sudo pacman -S lazygit
+```
+
+## 8. Neovim
 
 ### Ubuntu
 ```sh
