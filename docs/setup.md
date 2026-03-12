@@ -18,6 +18,8 @@ chsh -s $(which zsh)
 
 ```sh
 git clone git@github.com:iwwwanow/dotfiles.git ~/Projects/iwwwanow_dotfiles
+# или через https
+# git clone https://github.com/iwwwanow/dotfiles.git ~/Projects/iwwwanow_dotfiles
 cd ~/Projects/iwwwanow_dotfiles
 ./scripts/bootstrap.sh
 ```
