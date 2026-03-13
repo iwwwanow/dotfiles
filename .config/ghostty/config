@@ -16,7 +16,6 @@ keybind = ctrl+shift+.=move_tab:1
 keybind = ctrl+shift+v=new_split:right
 keybind = ctrl+shift+j=goto_split:left
 keybind = ctrl+shift+k=goto_split:right
-
 keybind = ctrl+shift+w=close_surface
 
 window-decoration = client
