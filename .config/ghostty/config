@@ -13,7 +13,7 @@ keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+<=move_tab:-1
 keybind = ctrl+shift+.=move_tab:1
 
-keybind = ctrl+shift+v=new_split:right
+keybind = ctrl+shift+e=new_split:right
 keybind = ctrl+shift+j=goto_split:left
 keybind = ctrl+shift+k=goto_split:right
 keybind = ctrl+shift+w=close_surface
