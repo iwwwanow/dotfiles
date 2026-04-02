@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 
 # PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH="$HOME/.meteor:$PATH"
 export PATH=$PATH:$HOME/Applications/zls/zig-out/bin
 export PATH="$HOME/.cargo/bin:$PATH"
 
