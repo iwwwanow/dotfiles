@@ -134,11 +134,17 @@ return {
 
 			require("conform").setup({
 				formatters_by_ft = {
-					typescript = { "prettier" },
-					javascript = { "prettier" },
+					-- TS/JS: eslint --fix по командным правилам (@advers/eslint),
+					-- prettier конфликтует с keyword-spacing и indent правилами
+					-- typescript = { "prettier" },
+					-- javascript = { "prettier" },
+					-- typescriptreact = { "prettier" },
+					-- javascriptreact = { "prettier" },
+					typescript = { "eslint_d" },
+					javascript = { "eslint_d" },
+					typescriptreact = { "eslint_d" },
+					javascriptreact = { "eslint_d" },
 					go = { "gofumpt", "goimports-reviser", "golines" },
-					typescriptreact = { "prettier" },
-					javascriptreact = { "prettier" },
 					gotmpl = { "prettier" },
 					json = { "prettier" },
 					html = { "prettier" },
