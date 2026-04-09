@@ -153,8 +153,8 @@ return {
 					markdown = { "prettier" },
 				},
 				format_on_save = {
-					timeout_ms = 1500,
-					lsp_fallback = true,
+					timeout_ms = 5000,
+					lsp_fallback = false,
 				},
 			})
 		end,
