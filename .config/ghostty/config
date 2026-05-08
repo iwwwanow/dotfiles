@@ -25,4 +25,5 @@ gtk-titlebar-style = tabs
 confirm-close-surface = false
 
 shell-integration = none
-window-show-tab-bar = auto
+
+gtk-titlebar = window-decoration
