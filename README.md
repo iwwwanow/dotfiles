@@ -1,7 +1,17 @@
 # dotfiles
 
-`./scripts/bootstrap.sh`
-`./scripts/bootstrap.sh`
+```bash
+stow -R -v -t ~ .
+```
 
-- make zsh default
-  `chsh -s $(which zsh)`
+Or via bootstrap script (also sets up sync services):
+
+```bash
+./scripts/bootstrap.sh
+```
+
+Make zsh default (first time):
+
+```bash
+chsh -s $(which zsh)
+```
