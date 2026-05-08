@@ -26,4 +26,5 @@ confirm-close-surface = false
 
 shell-integration = none
 
-gtk-titlebar = window-decoration
+gtk-titlebar-hide-when-maximized = true
+gtk-titlebar-style = native
