@@ -27,4 +27,4 @@ confirm-close-surface = false
 shell-integration = none
 
 gtk-titlebar-hide-when-maximized = true
-gtk-titlebar-style = native
+gtk-titlebar-style = tabs
